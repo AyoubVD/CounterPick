@@ -1,0 +1,3 @@
+<footer>
+    Counterpick Footer
+</footer>
