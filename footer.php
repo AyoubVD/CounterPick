@@ -1,3 +1,3 @@
 <footer>
-    Counterpick Footer
+    © 2021 - Counterpick - Thomas More
 </footer>
