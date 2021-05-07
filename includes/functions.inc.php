@@ -42,12 +42,12 @@ function pwdMatch($pwd,$repeatpwd) {
 function uidExists($conn,$username,$email) {
    $sql ="SELECT * FROM users WHERE usersUid = ? OR usersEmail = ? ;";
    $stmt = mysqli_stmt_init($conn);
-   if (mysqli_stmt_prepare($stmt,$sql)) {
+   if (!mysqli_stmt_prepare($stmt,$sql)) {
     header("location:../signup.php?error=failed");
     exit();
    }
 
-   mysqli_stmt_bind_param($stmt,"ss",$username,$email)
+   mysqli_stmt_bind_param($stmt,"ss",$username,$email);
    mysqli_stmt_execute($stmt);
 
    $resultData = mysqli_stmt_get_result($stmt);
@@ -66,7 +66,7 @@ function uidExists($conn,$username,$email) {
 function createUser($conn,$name,$email,$username,$pwd) {
     $sql ="INSERT INTO users (userName, usersEmail, usersUid , usersPwd) VALUES(?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
-    if (mysqli_stmt_prepare($stmt,$sql)) {
+    if (!mysqli_stmt_prepare($stmt,$sql)) {
      header("location:../signup.php?error=failed");
      exit();
     }
