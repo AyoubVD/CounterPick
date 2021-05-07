@@ -15,19 +15,7 @@ error_reporting(0);
         <li>
             <a href="contact.php">Contact</a>
         </li>
-        <li>
-            <?php
-                if($_SESSION['loggedIn']==false){
-                    ?>
-                        <a href="signup.php">Sign up</a>
-                    <?php
-                }else{
-                    ?>
-                        <a href="login.php">Login</a>
-                    <?php
-                } 
-            ?>
-        </li>
+    
         <li>
             <a href="login.php">Login</a>
         </li>
