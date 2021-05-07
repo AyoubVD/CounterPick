@@ -14,26 +14,9 @@
 <body>
     <div id="container">
         <h1 id="title">What is counterpick?</h1>
-        <header>
-            <a href="index.php"><img id="logo" src="img/logo.png"></a>
-            <ul>
-                <li>
-                    <a href="recruit.php" >Recruit</a>
-                </li>
-                <li>
-                    <a href="play.php">Play</a>
-                </li>
-                <li>
-                    <a href="contact.php">Contact</a>
-                </li>
-                <li>
-                    <a href="login.php">Login</a>
-                </li>
-                <li>
-                    <a href="login.php">Register</a>
-                </li>
-            </ul>
-        </header>
+        
+        <?php include_once "./components/header.php" ?>
+        
         <div id="content">
         <p>
             Counterpick is an web application for everyone that is interested in playing League of Legends (LoL) at amateur level.<br>
@@ -43,7 +26,7 @@
         </p>
         </div>
         
-        <?php include_once "./footer.php" ?>
+        <?php include_once "./components/footer.php" ?>
     </div>
 </body>
 </html>
