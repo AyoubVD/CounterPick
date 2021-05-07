@@ -28,7 +28,6 @@
                 <li>For everybody who plays competitively comp LOL and is an amateur.</li>
                 <li>A web application where you can find data on the current state of the tournament.</li>
                 <li>We are using an API to get the necessary information on the players and using it to match the players on the same skillset.</li>
-                <li></li>
             </ol>
             <h3>
             So you might ask, isn't this a lot. <br>
