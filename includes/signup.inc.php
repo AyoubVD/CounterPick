@@ -6,9 +6,33 @@ if (isset($_POST["submit"])) {
     $username = $_POST["uid"];
     $pwd = $_POST["pwd"];
     $repeatpwd = $_POST["repeatpwd"];
+
+
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
+    if (emptyInputSignup($name,$email,$username,$pwd,$repeatpwd) !== false ) {
+        header("location:../signup.php?error=emptyinput");
+        exit();
+    }
+    if (invalidUid($username) !== false) {
+        header("location:../signup.php?error=invaliduid");
+        exit();
+    }
+    if (invalidEmail($email) !== false) {
+        header("location:../signup.php?error=invalidemail");
+        exit();
+    }
+    if (pwdMatch($pwd,$repeatpwd) !== false) {
+        header("location:../signup.php?error=passwordnotthesame");
+        exit();
+    }
+    if (uidExists($conn,$username) !== false) {
+        header("location:../signup.php?error=usernametaken");
+        exit();
+    }
+
+    createUser($conn,$name,$email,$username,$pwd);
 }
 else{
     header("location:../signup.php");
