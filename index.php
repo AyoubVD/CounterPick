@@ -12,7 +12,7 @@
     -->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/general.css" >
-    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
 </head>
 <body>
     <div id="container">
