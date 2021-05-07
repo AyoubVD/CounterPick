@@ -33,7 +33,7 @@
                     <a href="login.php">Login</a>
                 </li>
                 <li>
-                    <a href="login.php">Register</a>
+                    <a href="signup.php">Register</a>
                 </li>
             </ul>
         </header>
