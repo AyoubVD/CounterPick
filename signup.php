@@ -41,7 +41,10 @@ if (isset($_GET["error"])) {
         echo "<p>Password not matching!</p>";
     }
     else if ($_GET["error"] == "usernametaken") {
-        echo "<p>Username or Email already taken!</p>";
+        echo "<p>Username  already taken!</p>";
+    }
+    else if ($_GET["error"] == "Emailtaken") {
+        echo "<p>Email already taken!</p>";
     }
 }
 
