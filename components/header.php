@@ -1,4 +1,8 @@
 <header>
+<?php
+// Turn off all error reporting
+error_reporting(0);
+?>
 <?php session_start(); ?>
     <a href="index.php"><img id="logo" src="img/logo.png"></a>
     <ul>
