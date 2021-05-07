@@ -24,5 +24,14 @@
                 } 
             ?>
         </li>
+        <li>
+            <a href="login.php">Register</a>
+        </li>
+        <li>
+            <a href="signup.php">Sign up</a>
+        </li>
+        <li>
+            <a href="createteam.php">Create Team</a>
+        </li>
     </ul>
 </header>
