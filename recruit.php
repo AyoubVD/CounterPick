@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="icon" href="./img/logo.png">
         <script src="recruit.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/recruit.css">
-    <link rel="stylesheet" type="text/css" href="/css/general.css" >
+    <link rel="stylesheet" type="text/css" href="./css/recruit.css">
+    <link rel="stylesheet" type="text/css" href="./css/general.css" >
     
 </head>
 <body>
