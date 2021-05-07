@@ -1,5 +1,7 @@
-<?php  
-
+<?php 
+if (!isset($_SESSION['loggedIn'])) {
+    $_SESSION['loggedIn'] = false;
+}
 ?>
 
 
@@ -26,6 +28,7 @@
      <br>
     </form>
 </section>
+<a href="login.php">Already an account <b>click here</b></a>
 
 
 
