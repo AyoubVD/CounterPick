@@ -37,7 +37,7 @@
             </h3>
             <ul>
                 <li>
-                LOL installed, updated web browser and a stable network connection.
+                LOL installed, updated web browser and a stable network connection.test
                 </li>
             </ul>
             <p>As you can see this isn't a lot, so what's holding you back? <br>
