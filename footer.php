@@ -3,5 +3,5 @@
     <a href="#">Teaser</a>
     <br>
     © 2021 - Counterpick - Thomas More
-    ji
+    ji u
 </footer>
