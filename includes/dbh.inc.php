@@ -9,20 +9,7 @@
         if ($conn == false) die("Failed to connect to database!");
         return $conn;
     }
-$servername = "ID328593_counterpick.db.webhosting.be";
-$username = "ID328593_counterpick";
-$password = "counterPick123";
-$dbname = "ID328593_counterpickr";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) 
-{
-  die("Connection failed: " . $conn->connect_error);
-}
-
-return $conn;
 
     function closeConnection($conn) {
         $conn->close();
@@ -48,5 +35,21 @@ return $conn;
         closeConnection($conn);
         return $result;
     }
+
+
+$servername = "ID328593_counterpick.db.webhosting.be";
+$username = "ID328593_counterpick";
+$password = "counterPick123";
+$dbname = "ID328593_counterpickr";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) 
+{
+  die("Connection failed: " . $conn->connect_error);
+}
+
+return $conn;
 
   
