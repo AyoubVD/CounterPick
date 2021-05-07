@@ -17,26 +17,9 @@
 <body>
     <div id="container">
         <h1 id="title">What is counterpick?</h1>
-        <header>
-            <a href="index.php"><img id="logo" src="img/logo.png"></a>
-            <ul>
-                <li>
-                    <a href="recruit.php" >Recruit</a>
-                </li>
-                <li>
-                    <a href="play.php">Play</a>
-                </li>
-                <li>
-                    <a href="contact.php">Contact</a>
-                </li>
-                <li>
-                    <a href="login.php">Login</a>
-                </li>
-                <li>
-                    <a href="login.php">Register</a>
-                </li>
-            </ul>
-        </header>
+
+        <?php include_once "./components/header.php" ?>
+
         <div id="content">
             <h2>What is CounterPick</h2>
             <h3>CounterPick is <u>four</u> points</h3>
@@ -61,7 +44,7 @@
             Come and join the community to become a better League player!</p>
         </div>
         
-        <?php include_once "./footer.php" ?>
+        <?php include_once "./components/footer.php" ?>
     </div>
 </body>
 </html>
