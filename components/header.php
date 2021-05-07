@@ -29,7 +29,7 @@ error_reporting(0);
             ?>
         </li>
         <li>
-            <a href="login.php">Register</a>
+            <a href="login.php">Login</a>
         </li>
         <li>
             <a href="signup.php">Sign up</a>
