@@ -11,6 +11,7 @@
      <br>
      <input type="password" name="pwd" placeholder="password">
      <br>
+     <br>
      <button type="submit" name="submit">Log In</button>
     </form>
 </section>
