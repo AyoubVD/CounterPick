@@ -15,7 +15,6 @@
 </head>
 <body>
     <div id="container">
-        <h1 id="title">Counterpick</h1>
 <header>
 <?php
 // Turn off all error reporting
