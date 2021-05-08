@@ -23,7 +23,6 @@ if (isset($_POST["reset-request-submit"])) {
     {
         mysqli_stmt_bind_param($stmt,"s",$userEmail);
         mysqli_stmt_execute($stmt);
-        header("location:../signup.php?newpwd=passwordupdated");
     }
 
     $sql = "INSERT INTO pwdReset(pwdResetEmail,pwdResetSelector,pwdResetToken,pwdResetExpires) VALUES(?,?,?,?);";
