@@ -44,11 +44,11 @@ if (isset($_POST["reset-password-submit"])) {
             $tokenCheck = password_verify($tokenBin,$row["pwdResetToken"]);
 
 
-            if ($tokenCheck == false) {
+            if ($tokenCheck === false) {
                 echo "You need to re-submit your reset request2";
-        exit();
+                exit();
             }
-            elseif ($tokenCheck == true) {
+            elseif ($tokenCheck === true) {
                 $tokenEmail = $row['pwdResetEmail'];
 
 
