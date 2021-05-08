@@ -1,6 +1,4 @@
-<?php  
-
-?>
+<?php include_once "./components/header.php" ?>
 
 
 <section class="signup-form">
