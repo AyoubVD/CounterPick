@@ -18,7 +18,7 @@ error_reporting(0);
       <?php
             if (isset($_SESSION["useruid"])) {
                 echo "<li><a href="login.php">Profile page</a></li>";
-                echo "<li><a href="logout.php">Log out</a></li>";
+                echo "<li><a href="../includes/logout.inc.php">Log out</a></li>";
             }
             else
             {
