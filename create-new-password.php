@@ -13,7 +13,7 @@
                 {
                     if (ctype_xdigit($selector) !== false && ctype_xdigit($validator) !== false) {
                         ?>
-                            <form action="/includes/reset-password.inc.php" method="post">
+                            <form action="./includes/reset-password.inc.php" method="post">
                             <input type="hidden" name="selector" value="<?php echo $selector; ?>">
                             <input type="hidden" name="validator" value="<?php echo $selector; ?>">
                             <input type="password" name="pwds" placeholder="Enter a new password...">
