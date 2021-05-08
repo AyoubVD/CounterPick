@@ -76,7 +76,7 @@ else
                     }
                     else
                     {
-                    $newPwdHash = password_hash($password,PASSWORD_DEFAULT)
+                    $newPwdHash = password_hash($password,PASSWORD_DEFAULT);
                     mysqli_stmt_bind_param($stmt,"ss",$newPwdHash,$tokenEmail);
                     mysqli_stmt_execute($stmt);
 
