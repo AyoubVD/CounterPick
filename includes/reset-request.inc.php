@@ -43,7 +43,7 @@ if (isset($_POST["reset-request-submit"])) {
 
     $To = $userEmail;
 
-    $subject = 'Reset your password'
+    $subject = 'Reset your password';
 
     $message = '<p>We recieved a password reset request. The link to reset your password is below.If you did not 
     make this request, you can ignore this email</p>';
