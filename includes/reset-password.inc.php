@@ -32,7 +32,6 @@ if (isset($_POST["reset-password-submit"])) {
     {
         mysqli_stmt_bind_param($stmt,"ss",$selector,$currentDate);
         mysqli_stmt_execute($stmt);
-
         $result = mysqli_stmt_get_result($stmt);
         if (!$row = mysqli_fetch_assoc($result)) {
         echo "You need to re-submit your reset request1";
@@ -49,10 +48,8 @@ if (isset($_POST["reset-password-submit"])) {
                 exit();
             }
             elseif ($tokenCheck === true) {
-                $tokenEmail = $row['pwdResetEmail'];
-
-
-                $sql = "SELECT * FROM users WHERE emailUseres=?;";
+                $tokenEmail = $row["pwdResetEmail"];
+                $sql = "SELECT * FROM users WHERE usersEmail=?;";
                 $stmt = mysqli_stmt_init($conn);
                 if (!mysqli_stmt_prepare($stmt,$sql)) {
                     echo "There was error2!";
@@ -62,6 +59,7 @@ if (isset($_POST["reset-password-submit"])) {
                 {
                     mysqli_stmt_bind_param($stmt,"s",$tokenEmail);
                     mysqli_stmt_execute($stmt);
+                    $result = mysqli_stmt_get_result($stmt);
                     if (!$row = mysqli_fetch_assoc($result)) {
                         echo "There was an error!3";
                         exit();
