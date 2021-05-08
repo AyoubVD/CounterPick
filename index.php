@@ -11,7 +11,7 @@
     -->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/general.css" >
-    <link rel="shortcut icon" type="image/png" href="img/logowhite.jpg">
+    <link rel="shortcut icon" type="image/png" href="./img/logowhite.jpg">
 </head>
 <body>
     <div id="container">
