@@ -23,6 +23,7 @@ error_reporting(0);
 <?php session_start(); ?>
     <a href="index.php"><img id="logo" src="img/logo.png"></a>
     <ul>
+        
         <li>
             <a href="recruit.php" >Recruit</a>
         </li>
@@ -31,12 +32,16 @@ error_reporting(0);
         </li>
       <?php
             if (isset($_SESSION["useruid"])) {
+                echo "<li><a href='recruit.php'>Recruit</a></li>";
+                echo "<li><a href='playafterlogin.php'>Play</a></li>";
                 echo "<li><a href='profile.php'>Profile</a></li>";
                 echo "<li><a href='createteam.php'>Create Team</a></li>";
                 echo "<li><a href='./includes/logout.inc.php'>Log out</a></li>";
             }
             else
             {
+                echo "<li><a href='login.php'>Recruit</a></li>";
+                echo "<li><a href='play.php'>Play</a></li>";
                 echo "<li><a href='signup.php'>Sign up</a></li>";
                 echo "<li><a href='login.php'>Login</a></li>";
             }
