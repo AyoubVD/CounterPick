@@ -13,7 +13,7 @@ if (isset($_POST["reset-password-submit"])) {
     header("location:../signup.php?newpwd=empty");
     exit();
  }
- elseif ($password != $passwordRepeat) {
+ else if ($password != $passwordRepeat) {
     header("location:../signup.php?newpwd=pwdnotsame");
     exit();
  }
@@ -32,6 +32,27 @@ else
 {
     mysqli_stmt_bind_param($stmt,"s",$selector);
     mysqli_stmt_execute($stmt);
+
+    $result = mysqli_stmt_get_result($stmt);
+    if (!$row = mysqli_fetch_assoc($result)) {
+       echo "You need to re-submit your reset request."
+       exit();
+    }
+    else
+    {
+        $tokenBin = hex2bin($validator);
+        $tokenCheck = password_verify($tokenBin,$row["pwdResetToken"]);
+
+
+        if ($tokenCheck == false) {
+            echo "You need to re-submit your reset request."
+       exit();
+        }
+        elseif ($tokenCheck == true) {
+            $tokenEmail = $row['pwd']
+        }
+
+    }
 }
 
 
