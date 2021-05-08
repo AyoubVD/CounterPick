@@ -17,13 +17,13 @@ error_reporting(0);
         </li>
       <?php
             if (isset($_SESSION["useruid"])) {
-                echo "<li><a href="login.php">Profile page</a></li>";
-                echo "<li><a href="../includes/logout.inc.php">Log out</a></li>";
+                echo "<li><a href='login.php'>Profile page</a></li>";
+                echo "<li><a href='./includes/logout.inc.php'>Log out</a></li>";
             }
             else
             {
-                echo "<li><a href="signup.php">Sign up</a></li>";
-                echo "<li><a href="login.php">Login</a></li>";
+                echo "<li><a href='signup.php'>Sign up</a></li>";
+                echo "<li><a href='login.php'>Login</a></li>";
             }
       ?>
         <li>
