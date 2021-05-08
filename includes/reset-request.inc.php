@@ -14,7 +14,6 @@ if (isset($_POST["reset-request-submit"])) {
     $userEmail = $_POST["email"];
 
     $sql = "DELETE FROM pwdReset WHERE pwdResetEmail=?";
-
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt,$sql)) {
         echo "There was error!"
@@ -24,6 +23,7 @@ if (isset($_POST["reset-request-submit"])) {
     {
         mysqli_stmt_bind_param($stmt,"s",$userEmail);
         mysqli_stmt_execute($stmt);
+        header("location:../signup.php?newpwd=passwordupdated");
     }
 
     $sql = "INSERT INTO pwdReset(pwdResetEmail,pwdResetSelector,pwdResetToken,pwdResetExpires) VALUES(?,?,?,?);";
