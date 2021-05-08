@@ -24,7 +24,8 @@ if (isset($_GET["error"])) {
 
 ?>
 </section>
-
+<br>
+<a href="signup.php">Don't have an account yet?<b>click here</b></a>
 
 
 <?php include_once "components/footer.php" ?>
