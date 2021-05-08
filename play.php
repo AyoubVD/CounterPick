@@ -11,12 +11,6 @@
     <link rel="stylesheet" type="text/css" href="./css/general.css" >
     
 </head>
-<?php
-            if (isset($_SESSION["useruid"])) {
-                header("location:./getstarted.php");
-                exit();
-            }
-      ?>
 <body>
     <div id="container">
         <h1 id="title">What is counterpick?</h1>
