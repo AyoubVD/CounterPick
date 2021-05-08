@@ -34,7 +34,7 @@ error_reporting(0);
         </li>
       <?php
             if (isset($_SESSION["useruid"])) {
-                echo "<li><a href='profile.php'>Profile page</a></li>";
+                echo "<li><a href='profile.php'>Profile</a></li>";
                 echo "<li><a href='createteam.php'>Create Team</a></li>";
                 echo "<li><a href='./includes/logout.inc.php'>Log out</a></li>";
             }
