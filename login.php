@@ -1,7 +1,7 @@
 <?php include_once "./components/header.php" ?>
 
 
-<section class="login-form">
+<section class="signup-form">
     <h2>Log In</h2>
     <form action="./includes/login.inc.php" method="post">
      <input type="text" name="uid" placeholder="Username/Email">
