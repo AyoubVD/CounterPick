@@ -12,9 +12,7 @@ error_reporting(0);
         <li>
             <a href="play.php">Play</a>
         </li>
-        <li>
-            <a href="contact.php">Contact</a>
-        </li>
+        
       <?php
             if (isset($_SESSION["useruid"])) {
                 echo "<li><a href='profile.php'>Profile page</a></li>";
@@ -28,6 +26,9 @@ error_reporting(0);
       ?>
         <li>
             <a href="createteam.php">Create Team</a>
+        </li>
+        <li>
+            <a href="contact.php">Contact</a>
         </li>
     </ul>
 </header>
