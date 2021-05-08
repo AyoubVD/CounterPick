@@ -25,8 +25,7 @@
      <br>
      <br>
     </form>
-</section>
-<?php
+    <?php
 if (isset($_GET["error"])) {
     if ($_GET["error"] == "emptyinput") {
         echo "<p>Fill in all fields!</p>";
@@ -46,9 +45,14 @@ if (isset($_GET["error"])) {
     else if ($_GET["error"] == "Emailtaken") {
         echo "<p>Email already taken!</p>";
     }
+    else if ($_GET["error"] == "none") {
+        echo "<p>You have signed up!</p>";
+    }
 }
 
 ?>
+</section>
+
 <a href="login.php">Already an account <b>click here</b></a>
 
 
