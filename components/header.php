@@ -15,13 +15,17 @@ error_reporting(0);
         <li>
             <a href="contact.php">Contact</a>
         </li>
-    
-        <li>
-            <a href="login.php">Login</a>
-        </li>
-        <li>
-            <a href="signup.php">Sign up</a>
-        </li>
+      <?php
+            if (isset($_SESSION["useruid"])) {
+                echo "<li><a href="login.php">Profile page</a></li>";
+                echo "<li><a href="logout.php">Log out</a></li>";
+            }
+            else
+            {
+                echo "<li><a href="signup.php">Sign up</a></li>";
+                echo "<li><a href="login.php">Login</a></li>";
+            }
+      ?>
         <li>
             <a href="createteam.php">Create Team</a>
         </li>
