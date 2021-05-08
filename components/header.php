@@ -29,9 +29,6 @@ error_reporting(0);
         <li>
             <a href="play.php">Play</a>
         </li>
-        <li>
-            <a href="createteam.php">Create Team</a>
-        </li>
       <?php
             if (isset($_SESSION["useruid"])) {
                 echo "<li><a href='profile.php'>Profile</a></li>";
