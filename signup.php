@@ -49,6 +49,7 @@ if (isset($_GET["error"])) {
 }
 
 ?>
+<a href="reset-password.php">Forgot your password?</a>
 </section>
 
 <a href="login.php">Already an account <b>click here</b></a>
