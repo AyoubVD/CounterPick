@@ -35,7 +35,7 @@ else
 
     $result = mysqli_stmt_get_result($stmt);
     if (!$row = mysqli_fetch_assoc($result)) {
-       echo "You need to re-submit your reset request."
+       echo "You need to re-submit your reset request.";
        exit();
     }
     else
@@ -45,7 +45,7 @@ else
 
 
         if ($tokenCheck == false) {
-            echo "You need to re-submit your reset request."
+            echo "You need to re-submit your reset request.";
        exit();
         }
         elseif ($tokenCheck == true) {
