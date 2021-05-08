@@ -1,18 +1,32 @@
 <?php include_once "./components/header.php" ?>
 
 <section class="section-default">
-                <h2>Reset your password</h2>
-               <p>An e-mail will be send to you with instructions on how to reset your password.</p>
-               <form action="./includes/reset-request.inc.php" method="post">
-               <input type="text" name="email" placeholder="Enter your e-mail address...">
-               <button type="submit" name="reset-request-submit">Receive new password by email</button>
-               </form>
+
                <?php 
-               if (isset($_GET["reset"])) {
-                   if($_GET["reset"] == "success"){
-                       echo '<p class="signupsuccess">Check your e-mail! </p>';
-                   }
-               }
+                $selector = $_GET["selector"];
+                $validator = $_GET["validator"];
+
+                if (empty($selector) || empty($validator)) {
+                    echo "Could not validate your request!";
+                }
+                else
+                {
+                    if (ctype_xdigit($selector) !== false && ctype_xdigit($validator) !== false) {
+                        ?>
+                            <form action="/includes/reset-password.inc.php" method="post">
+                            <input type="hidden" name="selector" value="<?php echo $selector; ?>">
+                            <input type="hidden" name="validator" value="<?php echo $selector; ?>">
+                            <input type="password" name="pwds" placeholder="Enter a new password...">
+                            <input type="password" name="pwd-repeat" placeholder="repeat new password...">
+                            <button type="submit" name="reset-password-submit">Reset password</button>
+                            </form>
+
+
+                        <?php 
+
+
+                    }
+                }
                
                ?>
 </section>
