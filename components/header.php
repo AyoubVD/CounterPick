@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="container">
-        <h1 id="title">What is counterpick?</h1>
+        <h1 id="title">Counterpick</h1>
 <header>
 <?php
 // Turn off all error reporting
