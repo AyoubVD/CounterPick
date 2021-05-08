@@ -7,7 +7,7 @@ if (isset($_POST["reset-request-submit"])) {
 
     $url = "https://counterpick.helpimstuckatschool.be/create-new-password.php?selector=" . $selector."&validator=" . bin2hex($token);
 
-    $expires = date("U") + 1800000;
+    $expires = date("U") + 1800;
 
     require 'dbh.inc.php';
 
@@ -38,10 +38,10 @@ if (isset($_POST["reset-request-submit"])) {
         mysqli_stmt_execute($stmt);
     }
     mysqli_stmt_close($stmt);
-    mysqli_close($conn);
+    mysqli_close();
 
 
-    $To = $userEmail;
+    $to = $userEmail;
 
     $subject = 'Reset your password';
 
@@ -54,7 +54,7 @@ if (isset($_POST["reset-request-submit"])) {
     $headers .= "Reply-To: r0754504@student.thomasmore.be\r\n";
     $headers .= "Content-type: text/html\r\n";
 
-    mail($To,$subject,$message,$headers);
+    mail($to,$subject,$message,$headers);
     header("location:../reset-password.php?reset=success");
 }
 else{
