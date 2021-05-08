@@ -7,7 +7,7 @@ if (isset($_POST["reset-request-submit"])) {
 
     $url = "https://counterpick.helpimstuckatschool.be/create-new-password.php?selector=" . $selector."&validator=" . bin2hex($token);
 
-    $expires = date("U") + 1800;
+    $expires = date("U") + 1800000;
 
     require 'dbh.inc.php';
 
