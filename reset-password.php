@@ -7,6 +7,14 @@
                <input type="text" name="email" placeholder="Enter your e-mail address...">
                <button type="submit" name="reset-request-submit">Receive new password by email</button>
                </form>
+               <?php 
+               if (isset($_GET["reset"])) {
+                   if($_GET["reset"] == "success"){
+                       echo '<p class="signupsuccess">Check your e-mail! </p>';
+                   }
+               }
+               
+               ?>
 </section>
                 
 
