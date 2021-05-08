@@ -6,14 +6,14 @@ if (isset($_POST["reset-password-submit"])) {
 
  $selector = $_POST["selector"];
  $validator = $_POST["validator"];
- $password = $_POST["pwds"];
+ $Password = $_POST["pwds"];
  $passwordRepeat = $_POST["pwd-repeat"];
 
- if (empty($password) || empty($passwordRepeat)) {
+ if (empty($Password) || empty($passwordRepeat)) {
     header("location:../signup.php?newpwd=empty");
     exit();
  }
- else if ($password != $passwordRepeat) {
+ else if ($Password != $passwordRepeat) {
     header("location:../signup.php?newpwd=pwdnotsame");
     exit();
  }
@@ -76,7 +76,7 @@ else
                     }
                     else
                     {
-                    $newPwdHash = password_hash($password,PASSWORD_DEFAULT);
+                    $newPwdHash = password_hash($Password,PASSWORD_DEFAULT);
                     mysqli_stmt_bind_param($stmt,"ss",$newPwdHash,$tokenEmail);
                     mysqli_stmt_execute($stmt);
 
