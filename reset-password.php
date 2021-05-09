@@ -1,4 +1,4 @@
-<?php include_once "./components/header.php" ?>
+<?php include_once "./components/header.php"?>
 
 <section class="section-default">
                 <h2>Reset your password</h2>
