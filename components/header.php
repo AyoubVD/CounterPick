@@ -17,10 +17,11 @@
 <body>
     <div id="container">
         
-<header>
-<nav class="nk_bar">
-    <a href="index.php"><img id="logo" src="img/logo.png"></a>
+<header class="nk_bar">
+
+    <a href="index.php"><img id="logo" src="img/relogo.png"></a>
     <ul>
+    
       <?php
         
             if (isset($_SESSION["useruid"])) {
@@ -43,5 +44,5 @@
     <li><a href="contact.php">Contact</a></li>
         
     </ul>
-    </nav>
+  
 </header>

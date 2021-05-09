@@ -39,8 +39,12 @@ a{
     text-decoration: none;
 }
 .nk_bar{
-    background: #262626;
+    
     position: relative;
     min-width: 80rem;
 }
 
+
+.nk_bar{
+    background:black;
+}
