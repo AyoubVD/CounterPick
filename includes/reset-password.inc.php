@@ -8,19 +8,19 @@ if (isset($_POST["reset-password-submit"])) {
     $validator = $_POST["validator"];
     $Password = $_POST["pwds"];
     $passwordRepeat = $_POST["pwd-repeat"];
-    require_once 'reset-request.inc.php';
-
+    
+    require 'reset-request.inc.php';
     if (empty($Password) || empty($passwordRepeat)) {
-        header("location:$url?newpwd=empty");
+        header("location:$url");
         exit();
     }
     else if ($Password != $passwordRepeat) {
-        header("location:$url?newpwd=notsame");
+        header("location:$url");
         exit();
     }
 
     $currentDate = date("U");
-
+    
     require 'dbh.inc.php';
 
     $sql = "SELECT * FROM pwdReset WHERE pwdResetSelector=? AND pwdResetExpires >= ?";
@@ -89,7 +89,7 @@ if (isset($_POST["reset-password-submit"])) {
                         {
                             mysqli_stmt_bind_param($stmt,"s",$userEmail);
                             mysqli_stmt_execute($stmt);
-                            header("location:../login.php?newpwd=passwordupdated");
+                            header("location:../signup.php?newpwd=passwordupdated");
                         }
 
                         }
