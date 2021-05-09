@@ -32,10 +32,10 @@
                   <?php
                             if (isset($_GET["newpwd"])) {
                                 if ($_GET["newpwd"] == "empty") {
-                                    echo "<p>Fill in password!</p>";
+                                    echo "<p style='color:red;'>Fill in password!</p>";
                                 }
                                 else if ($_GET["newpwd"] == "notsame") {
-                                    echo "<p>Password not same!</p>";
+                                    echo "<p style='color:red;'>Password not same!</p>";
                                 }
                             }
 

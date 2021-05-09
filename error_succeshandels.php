@@ -6,7 +6,7 @@ if (isset($_GET["error"])) {
         echo "<p style='color:green;'>You have signed up!</p>";
     }
     if ($_GET["error"] == "emptypassword") {
-        echo "<p style='color:red;>Failed to create no input!</p>";
+        echo "<p style='color:red;'>Failed to create no input!</p>";
     }
     if ($_GET["error"] == "passwordnotsame") {
         echo "<p style='color:red;'>Failed to create password not the same!</p>";

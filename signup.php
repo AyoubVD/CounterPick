@@ -26,25 +26,25 @@
     <?php
 if (isset($_GET["error"])) {
     if ($_GET["error"] == "emptyinput") {
-        echo "<p>Fill in all fields!</p>";
+        echo "<p style='color:red;'>Fill in all fields!</p>";
     }
     else if ($_GET["error"] == "invaliduid") {
-        echo "<p>Chose a proper username!</p>";
+        echo "<p style='color:red;'>Chose a proper username!</p>";
     }
     else if ($_GET["error"] == "invalidemail") {
-        echo "<p>Not an email!</p>";
+        echo "<p style='color:red;'>Not an email!</p>";
     }
     else if ($_GET["error"] == "passwordnotthesame") {
-        echo "<p>Password not matching!</p>";
+        echo "<p style='color:red;'>Password not matching!</p>";
     }
     else if ($_GET["error"] == "usernametaken") {
-        echo "<p>Username  already taken!</p>";
+        echo "<p style='color:red;'>Username  already taken!</p>";
     }
     else if ($_GET["error"] == "Emailtaken") {
-        echo "<p>Email already taken!</p>";
+        echo "<p style='color:red;'>Email already taken!</p>";
     }
     else if ($_GET["error"] == "none") {
-        echo "<p>You have signed up!</p>";
+        echo "<p style='color:red;'>You have signed up!</p>";
     }
 }
 
