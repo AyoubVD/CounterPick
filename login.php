@@ -24,11 +24,9 @@ if (isset($_GET["error"])) {
 
 ?>
 <a href="reset-password.php">Forgot your password?</a>
-</section>
 <br>
 <a href="signup.php">Don't have an account yet?<b>click here</b></a>
-
-
+</section>
 </div>
         
         <?php include_once "./components/footer.php" ?>

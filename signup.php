@@ -50,10 +50,8 @@ if (isset($_GET["error"])) {
 
 
 ?>
-
-</section>
-
 <a href="login.php">Already an account <b>click here</b></a>
+</section>
 
 
 </div>
