@@ -18,7 +18,7 @@
     <div id="container">
         
 <header>
-<nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-autohide">
+<nav class="nk_bar">
     <a href="index.php"><img id="logo" src="img/logo.png"></a>
     <ul>
       <?php

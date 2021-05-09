@@ -38,4 +38,9 @@ a{
     color: #b7b7b6;
     text-decoration: none;
 }
+.nk_bar{
+    background: #262626;
+    position: relative;
+    min-width: 80rem;
+}
 
