@@ -9,13 +9,13 @@ if (isset($_POST["reset-password-submit"])) {
     $Password = $_POST["pwds"];
     $passwordRepeat = $_POST["pwd-repeat"];
     
-    require 'reset-request.inc.php';
+   
     if (empty($Password) || empty($passwordRepeat)) {
-        header("location:$url");
+        header("location:../error_succeshandels.php?error=emptypassword");
         exit();
     }
     else if ($Password != $passwordRepeat) {
-        header("location:$url");
+        header("location:../error_succeshandels.php?error=passwordnotsame");
         exit();
     }
 

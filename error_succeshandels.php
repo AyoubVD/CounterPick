@@ -5,6 +5,12 @@ if (isset($_GET["error"])) {
    if ($_GET["error"] == "none") {
         echo "<p>You have signed up!</p>";
     }
+    if ($_GET["error"] == "emptypassword") {
+        echo "<p>Failed to create no input!</p>";
+    }
+    if ($_GET["error"] == "passwordnotsame") {
+        echo "<p>Failed to create password not the same!</p>";
+    }
 }
 
 if (isset($_GET["reset"])) {
@@ -20,6 +26,11 @@ if (isset($_GET["newpwd"])) {
 if (isset($_GET["log"])) {
     if ($_GET["log"] == "out") {
         echo '<p class="signupsuccess">You have been logged out!</p>';
+    }
+}
+if (isset($_GET["log"])) {
+    if ($_GET["log"] == "in") {
+        echo '<p class="signupsuccess">You have been logged in!</p>';
     }
 }
 ?>
