@@ -10,11 +10,11 @@ if (isset($_POST["reset-password-submit"])) {
     $passwordRepeat = $_POST["pwd-repeat"];
 
     if (empty($Password) || empty($passwordRepeat)) {
-        header("location:../signup.php?newpwd=empty");
+        header("location:../create-new-password.php?newpwd=empty");
         exit();
     }
     else if ($Password != $passwordRepeat) {
-        header("location:../signup.php?newpwd=pwdnotsame");
+        header("location:../create-new-password.php?newpwd=pwdnotsame");
         exit();
     }
 
@@ -88,7 +88,7 @@ if (isset($_POST["reset-password-submit"])) {
                         {
                             mysqli_stmt_bind_param($stmt,"s",$userEmail);
                             mysqli_stmt_execute($stmt);
-                            header("location:../signup.php?newpwd=passwordupdated");
+                            header("location:../create-new-password.php?newpwd=passwordupdated");
                         }
 
                         }
