@@ -24,7 +24,7 @@
       <?php
         
             if (isset($_SESSION["useruid"])) {
-                echo "<li><a href='recruit.php'>Scout</a></li>";
+                echo "<li><a href='recruit.php'>Recruit</a></li>";
                 echo "<li><a href='playafterlogin.php'>Start</a></li>";
                 echo "<li><a href='profile.php'>Profile</a></li>";
                 echo "<li><a href='createteam.php'>Create Team</a></li>";
@@ -32,7 +32,6 @@
             }
             else
             {
-                echo "<li><a href='login.php'>Recruit</a></li>";
                 echo "<li><a href='play.php'>Play</a></li>";
                 echo "<li><a href='signup.php'>Sign up</a></li>";
                 echo "<li><a href='login.php'>Login</a></li>";
