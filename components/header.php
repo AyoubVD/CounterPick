@@ -34,7 +34,7 @@
             else
             {
                 echo "<li><a href='login.php'>Recruit</a></li>";
-                echo "<li><a href='playafterlogin.php'>Play</a></li>";
+                echo "<li><a href='play.php'>Play</a></li>";
                 echo "<li><a href='signup.php'>Sign up</a></li>";
                 echo "<li><a href='login.php'>Login</a></li>";
                                
