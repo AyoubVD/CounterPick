@@ -19,7 +19,7 @@
         
 <header class="nk_bar">
 
-    <a href="index.php"><img id="logo" src="img/relogo.png"></a>
+    <a href="index.php"><img id="logo" src="img/logo.png"></a>
     <ul>
     
       <?php
