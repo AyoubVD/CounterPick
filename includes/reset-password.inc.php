@@ -2,19 +2,20 @@
 
 if (isset($_POST["reset-password-submit"])) {
     
-
+    
 
     $selector = $_POST["selector"];
     $validator = $_POST["validator"];
     $Password = $_POST["pwds"];
     $passwordRepeat = $_POST["pwd-repeat"];
+    require_once 'reset-request.inc.php';
 
     if (empty($Password) || empty($passwordRepeat)) {
         header("location:../create-new-password.php?newpwd=empty");
         exit();
     }
     else if ($Password != $passwordRepeat) {
-        header("location:../create-new-password.php?newpwd=pwdnotsame");
+        header("location:$url");
         exit();
     }
 

@@ -1,6 +1,5 @@
 <?php 
 
-if (isset($_POST["reset-request-submit"])) {
     
     $selector = bin2hex(random_bytes(8));
     $token = random_bytes(32);
@@ -48,7 +47,7 @@ if (isset($_POST["reset-request-submit"])) {
     $message = '<p>We recieved a password reset request. The link to reset your password is below.If you did not 
     make this request, you can ignore this email</p>';
     $message .= '<p>Here is your password link:</br>';
-    $message .= '<a href="' . $url . '">' . $url .'</a></p>';
+    $message .= "<a href=' . $url . '>' . $url .'</a></p>";
 
     $headers = "From:counterpicksupport <r0754504@student.thomasmore.be>\r\n";
     $headers .= "Reply-To: r0754504@student.thomasmore.be\r\n";
@@ -56,8 +55,3 @@ if (isset($_POST["reset-request-submit"])) {
 
     mail($to,$subject,$message,$headers);
     header("location:../reset-password.php?reset=success");
-}
-else{
-    header("location:../index.php");
-   
-}
