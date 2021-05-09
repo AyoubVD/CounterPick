@@ -1,5 +1,4 @@
-
-        <?php include_once "./components/header.php" ?>
+<?php include_once "./components/header.php"?>
 
         <div id="content">
         <section class="signup-form">
