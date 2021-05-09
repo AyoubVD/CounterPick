@@ -47,11 +47,7 @@ if (isset($_GET["error"])) {
         echo "<p>You have signed up!</p>";
     }
 }
-if (isset($_GET["newpwd"])) {
-    if ($_GET["newpwd"] == "passwordupdated") {
-        echo '<p class="signupsuccess">Your password has been reset!</p>';
-    }
-}
+
 
 ?>
 

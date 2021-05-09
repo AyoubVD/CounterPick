@@ -89,7 +89,7 @@ if (isset($_POST["reset-password-submit"])) {
                         {
                             mysqli_stmt_bind_param($stmt,"s",$userEmail);
                             mysqli_stmt_execute($stmt);
-                            header("location:../create-new-password.php?newpwd=passwordupdated");
+                            header("location:../login.php?newpwd=passwordupdated");
                         }
 
                         }

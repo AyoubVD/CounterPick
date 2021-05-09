@@ -20,7 +20,17 @@
                             <input type="password" name="pwd-repeat" placeholder="repeat new password...">
                             <button type="submit" name="reset-password-submit">Reset password</button>
                             </form>
+                            <?php
+                            if (isset($_GET["newpwd"])) {
+                                if ($_GET["newpwd"] == "empty") {
+                                    echo "<p>Fill in password!</p>";
+                                }
+                                else if ($_GET["newpwd"] == "notsame") {
+                                    echo "<p>Password not same!</p>";
+                                }
+                            }
 
+                            ?>
 
                         <?php 
 
