@@ -39,3 +39,12 @@ a{
     text-decoration: none;
 }
 
+html { 
+	background: url(../images/bgDragonPit.jpg) no-repeat center center fixed;
+	background-color: #000000;
+	transition: background 2s linear;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
