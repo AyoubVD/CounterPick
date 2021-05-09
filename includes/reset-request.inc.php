@@ -55,7 +55,7 @@ if (isset($_POST["reset-request-submit"])) {
     $headers .= "Content-type: text/html\r\n";
 
     mail($to,$subject,$message,$headers);
-    header("location:../reset-password.php?reset=success");
+    header("location:../error_succeshandels.php?reset=success");
 }
 else{
     header("location:../index.php");

@@ -7,7 +7,16 @@ if (isset($_GET["error"])) {
     }
 }
 
-
+if (isset($_GET["reset"])) {
+    if($_GET["reset"] == "success"){
+        echo '<p class="signupsuccess">Check your e-mail! </p>';
+    }
+}
+if (isset($_GET["newpwd"])) {
+    if ($_GET["newpwd"] == "passwordupdated") {
+        echo '<p class="signupsuccess">Your password has been reset!</p>';
+    }
+}
 ?>
    </div>
         
