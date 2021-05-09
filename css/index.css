@@ -1,4 +1,10 @@
 #content{
     width: 100%;
-    text-align: left;
+    text-align: center;
+}
+
+
+.signup-form{
+    width: 100%;
+    text-align: center;
 }
