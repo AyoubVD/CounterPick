@@ -1,4 +1,4 @@
-<?php include_once "./components/header.php"?>
+<?php include_once "./components/headerlogin.php" ?>
         <div id="content">
         <p>
             Counterpick is an web application for everyone that is interested in playing League of Legends (LoL) at amateur level.<br>
