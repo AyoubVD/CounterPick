@@ -1,4 +1,4 @@
-<?php include_once "./components/headerlogin.php"?>
+<?php include_once "./components/header.php"?>
         
     <p>play afterlogin works</p>
         
