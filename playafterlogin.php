@@ -1,5 +1,5 @@
 <?php include_once "./components/header.php"?>
-        
+<div id="content">
     <p>play afterlogin works page</p>
         
     </div>

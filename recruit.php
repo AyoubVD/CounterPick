@@ -1,5 +1,5 @@
 <?php include_once "./components/header.php" ?>
-        <div id="content">
+<div id="content">
         <p>
             recruit works page
         </p>
