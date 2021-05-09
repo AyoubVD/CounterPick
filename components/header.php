@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@
     <div id="container">
 <header>
 
-<?php session_start(); ?>
+
     <a href="index.php"><img id="logo" src="img/logo.png"></a>
     <ul>
       <?php
