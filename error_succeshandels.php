@@ -17,6 +17,11 @@ if (isset($_GET["newpwd"])) {
         echo '<p class="signupsuccess">Your password has been reset!</p>';
     }
 }
+if (isset($_GET["log"])) {
+    if ($_GET["log"] == "out") {
+        echo '<p class="signupsuccess">You have been logged out!</p>';
+    }
+}
 ?>
    </div>
         
