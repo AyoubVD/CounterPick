@@ -15,7 +15,7 @@ if (isset($_POST["reset-password-submit"])) {
         exit();
     }
     else if ($Password != $passwordRepeat) {
-        header("location:$url");
+        header("location:$url?newpwd=notsame");
         exit();
     }
 
