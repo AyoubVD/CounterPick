@@ -1,6 +1,6 @@
 <?php include_once "./components/header.php" ?>
         
-   <p> oke this works</p>
+   <p> profile works page</p>
         
         <?php include_once "./components/footer.php" ?>
     </div>
