@@ -1,8 +1,4 @@
-
-
-        <?php include_once "./components/header.php" ?>
-
-
+<?php include_once "./components/header.php" ?>
         <div id="content">
         <form action="./includes/contact.inc.php" method="post">
             First Name: <input type="text" name="first_name"><br>
@@ -12,9 +8,8 @@
             <input type="submit" name="submit" value="Submit">
         </form>
     </div>
-        
-        <?php include_once "./components/footer.php" ?>
     </div>
 </body>
 </html>
 
+<?php include_once "./components/footer.php" ?>

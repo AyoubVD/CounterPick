@@ -32,7 +32,9 @@
 </section>
                 
 
-<?php include_once "./components/footer.php" ?>
+</div>
+        
+        <?php include_once "./components/footer.php" ?>
     </div>
 </body>
 </html>

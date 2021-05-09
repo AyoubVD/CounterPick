@@ -60,7 +60,9 @@ if (isset($_GET["newpwd"])) {
 <a href="login.php">Already an account <b>click here</b></a>
 
 
-
-<?php  
-include_once "components/footer.php" 
-?>
+</div>
+        
+        <?php include_once "./components/footer.php" ?>
+    </div>
+</body>
+</html>
