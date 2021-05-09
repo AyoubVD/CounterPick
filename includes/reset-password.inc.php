@@ -11,7 +11,7 @@ if (isset($_POST["reset-password-submit"])) {
     require_once 'reset-request.inc.php';
 
     if (empty($Password) || empty($passwordRepeat)) {
-        header("location:../create-new-password.php?newpwd=empty");
+        header("location:$url?newpwd=empty");
         exit();
     }
     else if ($Password != $passwordRepeat) {
