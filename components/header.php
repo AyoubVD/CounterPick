@@ -29,16 +29,18 @@
                 echo "<li><a href='profile.php'>Profile</a></li>";
                 echo "<li><a href='createteam.php'>Create Team</a></li>";
                 echo "<li><a href='./includes/logout.inc.php'>Log out</a></li>";
+                echo "<li><a href='contact.php'>Contact</a></li>";
             }
             else
             {
                 echo "<li><a href='login.php'>recruit</a></li>";
                 echo "<li><a href='play.php'>Play</a></li>";
                 echo "<li><a href='signup.php'>Sign up</a></li>";
-                echo "<li><a href='login.php'>Login</a></li>";                
+                echo "<li><a href='login.php'>Login</a></li>";
+                echo "<li><a href='contact.php'>Contact</a></li>";                
             }     
       ?>
-      <li><a href="contact.php">Contact</a></li>
+      
         
     </ul>
 </header>
