@@ -9,7 +9,7 @@ if (isset($_GET["error"])) {
 
 if (isset($_GET["reset"])) {
     if($_GET["reset"] == "success"){
-        echo '<p class="signupsuccess">Check your e-mail! </p>';
+        echo '<p class="signupsuccess">Check your e-mail!(check spam) </p>';
     }
 }
 if (isset($_GET["newpwd"])) {
