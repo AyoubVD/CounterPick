@@ -1,4 +1,15 @@
 <?php 
+function emptyInputContact($from,$last_name,$first_name) {
+    $result;
+    if (empty($from)|| empty($last_name)|| empty($first_name)) {
+        $result = true;
+    }
+    else{
+        $result = false;
+    }
+    return $result;
+}
+
 function emptyInputSignup($name,$email,$userName,$pwd,$repeatpwd) {
     $result;
     if (empty($name) || empty($email) || empty($userName) || empty($pwd) || empty($repeatpwd)) {
@@ -22,6 +33,16 @@ function invalidUid($userName) {
 function invalidEmail($email) {
     $result;
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $result = true;
+    }
+    else{
+        $result = false;
+    }
+    return $result;
+}
+function invalidSender($from) {
+    $result;
+    if (!filter_var($from, FILTER_VALIDATE_EMAIL)) {
         $result = true;
     }
     else{

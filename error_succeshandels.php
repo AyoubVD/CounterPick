@@ -33,6 +33,12 @@ if (isset($_GET["log"])) {
         echo '<p style="color:green;">You have been logged in!</p>';
     }
 }
+if (isset($_GET["send"])) {
+    if($_GET["send"] == "success"){
+        echo "<p style='color:green;'> Mail Sent. Thank you, we will contact you shortly.</p>";
+    }
+}
+
 ?>
 </div>      
 <?php include_once "./components/footer.php" ?>

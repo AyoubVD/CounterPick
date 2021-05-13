@@ -14,6 +14,17 @@
             <br>
             <input type="submit" name="submit" value="Submit">
         </form>
+        <?php
+            if (isset($_GET["error"])) {
+                if ($_GET["error"] == "emptyinput") {
+                    echo "<p style='color:red;'>Fill in all fields!</p>";
+                }
+        
+                else if ($_GET["error"] == "invalidemail") {
+                  echo "<p style='color:red;'>Not an email!</p>";
+                } 
+            }
+            ?>
     </div>
     <?php include_once "./components/footer.php" ?>
 </body>
