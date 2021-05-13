@@ -30,5 +30,6 @@ if (isset($_GET["error"])) {
 </div>
         <?php include_once "./components/footer.php" ?>
     </div>
+    
 </body>
 </html>
