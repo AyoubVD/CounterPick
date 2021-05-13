@@ -19,8 +19,8 @@ footer{
 }
 html{ 
     font-size: calc(0.7em + 0.7vw) ;
-    background-color: #3F3F3F;
-    color: #b7b7b6;
+    background-image: url('https://wallpaper.dog/large/20470427.png');
+    background-repeat: no-repeat;
 }
 #logo{
     left: 15%;
