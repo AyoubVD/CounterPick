@@ -34,10 +34,7 @@ if (isset($_GET["log"])) {
     }
 }
 ?>
-</div>
-   </div>
-        
-        <?php include_once "./components/footer.php" ?>
-    </div>
+</div>      
+<?php include_once "./components/footer.php" ?>
 </body>
 </html>

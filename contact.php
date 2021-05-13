@@ -1,5 +1,5 @@
 <?php include_once "./components/header.php" ?>
-        <div class="signup-form">
+    <div class="signup-form">
         <form action="./includes/contact.inc.php" method="post">
             First Name: <input type="text" name="first_name">
             <br>
@@ -15,8 +15,7 @@
             <input type="submit" name="submit" value="Submit">
         </form>
     </div>
-    </div>
+    <?php include_once "./components/footer.php" ?>
 </body>
 </html>
 
-<?php include_once "./components/footer.php" ?>

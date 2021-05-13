@@ -1,5 +1,4 @@
 <?php include_once "./components/header.php" ?>
-
         <div id="content" style='text-align: center;'>
             <h2>What is CounterPick</h2>
             <br>
@@ -49,9 +48,6 @@
             <br>
             <p>As you can see this isn't a lot, so what's holding you back? <br>
             Come and join the community to become a better League player!</p>
-        </div>
-        
-        <?php include_once "./components/footer.php" ?>
-    </div>
+<?php include_once "./components/footer.php" ?>
 </body>
 </html>
