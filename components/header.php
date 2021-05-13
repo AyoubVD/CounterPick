@@ -10,20 +10,27 @@
         Pas de naam aan van JS
         <script src="index.js"></script>
     -->
+    <script src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/general.css" >
     <link rel="shortcut icon" type="image/png" href="./img/logowhite.jpg">
 </head>
 <body>
+<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
+  <h1>Bootstrap Affix Example</h1>
+  <h3>Fixed (sticky) navbar on scroll</h3>
+  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
+  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+</div>
+
     <div id="container">
         
 <header class="nk_bar">
-
+<nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="197">
+  
     <a href="index.php"><img id="logo" src="img/logo.png"></a>
-    <ul>
-    
-      <?php
-        
+    <ul class="nav navbar-nav"> 
+      <?php    
             if (isset($_SESSION["useruid"])) {
                 echo "<li><a href='recruit.php'>Recruit</a></li>";
                 echo "<li><a href='playafterlogin.php'>Play</a></li>";
@@ -41,8 +48,7 @@
                                
             }     
       ?>
-    <li><a href="contact.php">Contact</a></li>
-        
+    <li><a href="contact.php">Contact</a></li>     
     </ul>
-  
+</nav>
 </header>

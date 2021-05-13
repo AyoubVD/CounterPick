@@ -48,3 +48,11 @@ a{
 .nk_bar{
     background:black;
 }
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
