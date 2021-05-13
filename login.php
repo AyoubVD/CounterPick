@@ -18,7 +18,7 @@ if (isset($_GET["error"])) {
         echo "<p style='color:red;'>Fill in all fields!</p>";
     }
     else if ($_GET["error"] == "wronglogin") {
-        echo "<p style='color:red;'>Username/password is wrong!</p>";
+        echo "<p style='color:red;text-align: center;'>Username/password is wrong!</p>";
     }
 }
 
@@ -28,7 +28,6 @@ if (isset($_GET["error"])) {
 <a href="signup.php">Don't have an account yet?<b>click here</b></a>
 </section>
 </div>
-        
         <?php include_once "./components/footer.php" ?>
     </div>
 </body>

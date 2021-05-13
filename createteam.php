@@ -1,6 +1,5 @@
 <?php include_once "./components/header.php"?>
 
-        <div id="content">
         <section class="signup-form">
             <h2>Create Team</h2>
             <form action="./includes/createteam.inc.php" method="post">
@@ -13,8 +12,7 @@
             <button type="submit" name="submit">Create Team</button>
             </form>
         </section>
-        </div>
-        
+ <div>   
         <?php include_once "./components/footer.php" ?>
     </div>
 </body>
