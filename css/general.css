@@ -48,17 +48,3 @@ a{
 .nk_bar{
     background:black;
 }
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-.sticky + .content {
-    padding-top: 60px;
-  }
-  
-.content {
-    padding: 16px;
-  }
