@@ -22,10 +22,10 @@ if(isset($_POST['submit'])){
     $message1 = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
     $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
-    $headers = "From:" . $from;
+    $headers1 = "From:" . $from;
     $headers2 = "From:" . $to;
-    mail($to,$subject,$message1,$headers2);
-    mail($from,$subject2,$message2,$headers); // sends a copy of the message to the sender
+    mail($to,$subject,$message1,$headers1);
+    mail($from,$subject2,$message2,$header2); // sends a copy of the message to the sender
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     header("location:../error_succeshandels.php?send=success");
 }
