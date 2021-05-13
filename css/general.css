@@ -30,7 +30,6 @@ html{
     margin-bottom: -20%;
     position: absolute;
     top: -70%;
-    width: 100px;
     height: 120px;
 }
 ul{
@@ -56,4 +55,9 @@ body {
     height: 100%;
     margin: auto;
     text-align: center;
+    background-image: url('https://wallpaper.dog/large/20470427.png');
+    background-repeat: no-repeat;
   }
+  
+  
+    

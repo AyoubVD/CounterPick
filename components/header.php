@@ -18,11 +18,8 @@
     <link rel="shortcut icon" type="image/png" href="./img/logowhite.jpg">
 </head>
 <body>
-<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
-  <h1>Bootstrap Affix Example</h1>
-  <h3>Fixed (sticky) navbar on scroll</h3>
-  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
-  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+<div class="container-fluid" style="background-image: url('https://i.ytimg.com/vi/QzxSg4EfV60/maxresdefault.jpg');height:200px;">
+
 </div>
 
     <div id="container">
