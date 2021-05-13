@@ -21,7 +21,7 @@
             }
 
             ?>
-        <a href="reset-password.php">Forgot your password?</a>
+        <a href="reset-password.php">Forgot your password?<b>click here</b></a>
         <br>
         <a href="signup.php">Don't have an account yet?<b>click here</b></a>
     </section>
