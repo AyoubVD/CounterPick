@@ -38,16 +38,7 @@ a{
     color: #b7b7b6;
     text-decoration: none;
 }
-.nk_bar{
-    
-    position: relative;
-    min-width: 80rem;
-}
 
-
-.nk_bar{
-    background:black;
-}
 .affix {
     top: 0;
     width: 100%;

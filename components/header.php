@@ -10,7 +10,9 @@
         Pas de naam aan van JS
         <script src="index.js"></script>
     -->
-    <script src="index.js"></script>
+    <script src="./header.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/general.css" >
     <link rel="shortcut icon" type="image/png" href="./img/logowhite.jpg">
@@ -25,11 +27,12 @@
 
     <div id="container">
         
-<header class="nk_bar">
+<header>
 <nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="197">
   
-    <a href="index.php"><img id="logo" src="img/logo.png"></a>
+    
     <ul class="nav navbar-nav"> 
+    <a href="index.php"><img id="logo" src="img/logo.png"></a>
       <?php    
             if (isset($_SESSION["useruid"])) {
                 echo "<li><a href='recruit.php'>Recruit</a></li>";
@@ -52,3 +55,6 @@
     </ul>
 </nav>
 </header>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
