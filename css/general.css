@@ -23,11 +23,15 @@ html{
     color: #b7b7b6;
 }
 #logo{
-    left: 0;
-    width: 10%;
+    left: 15%;
+    width: 12%;
     height: 10%;
     display: inline-block;
-    margin-bottom: -5%;
+    margin-bottom: -20%;
+    position: absolute;
+    top: -70%;
+    width: 100px;
+    height: 120px;
 }
 ul{
     margin-left:15%;

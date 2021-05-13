@@ -31,7 +31,7 @@
 <nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="197">
   
     
-    <ul class="nav navbar-nav"> 
+    <ul class="nav navbar-nav" style="padding-left: 10%;float:right;"> 
     <a href="index.php"><img id="logo" src="img/logo.png"></a>
       <?php    
             if (isset($_SESSION["useruid"])) {
@@ -40,7 +40,7 @@
                 echo "<li><a href='profile.php'>Profile</a></li>";
                 echo "<li><a href='createteam.php'>Create Team</a></li>";
                 echo "<li><a href='./includes/logout.inc.php'>Log out</a></li>";
-               
+                echo "<li><a href='contact.php'>Contact</a></li>"; 
             }
             else
             {
@@ -48,10 +48,9 @@
                 echo "<li><a href='play.php'>Play</a></li>";
                 echo "<li><a href='signup.php'>Sign up</a></li>";
                 echo "<li><a href='login.php'>Login</a></li>";
-                               
+                echo "<li><a href='contact.php'>Contact</a></li>";              
             }     
       ?>
-    <li><a href="contact.php">Contact</a></li>     
     </ul>
 </nav>
 </header>
