@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/general.css" >
+    <link rel="shortcut icon" type="image/png" href="./img/logowhite.jpg">
 </head>
 <body>
 <div class="container-fluid" style="background-image: url('https://i.ytimg.com/vi/QzxSg4EfV60/maxresdefault.jpg');height:200px;">
