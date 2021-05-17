@@ -61,7 +61,7 @@ function pwdMatch($pwd,$repeatpwd) {
     return $result;
 }
 function uidExists($conn,$userName) {
-   $sql ="SELECT * FROM users WHERE usersUid = ?;";
+   $sql ="SELECT * FROM userlogin WHERE usersUid = ?;";
    $stmt = mysqli_stmt_init($conn);
    if (!mysqli_stmt_prepare($stmt,$sql)) {
     header("location:../signup.php?error=failedexist");
@@ -84,7 +84,7 @@ function uidExists($conn,$userName) {
    mysqli_stmt_close($stmt);
 }
 function EmailExists($conn,$email) {
-    $sql ="SELECT * FROM users WHERE usersEmail = ?;";
+    $sql ="SELECT * FROM userlogin WHERE usersEmail = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt,$sql)) {
      header("location:../signup.php?error=failedexist");
@@ -108,7 +108,7 @@ function EmailExists($conn,$email) {
  }
 
 function createUser($conn,$name,$email,$userName,$pwd) {
-    $sql ="INSERT INTO users (userName, usersEmail, usersUid , usersPwd) VALUES(?,?,?,?);";
+    $sql ="INSERT INTO userlogin (userName, usersEmail, usersUid , usersPwd) VALUES(?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt,$sql)) {
      header("location:../signup.php?error=failedtocreate");

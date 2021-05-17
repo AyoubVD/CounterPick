@@ -50,7 +50,7 @@ if (isset($_POST["reset-password-submit"])) {
             }
             elseif ($tokenCheck === true) {
                 $tokenEmail = $row["pwdResetEmail"];
-                $sql = "SELECT * FROM users WHERE usersEmail=?;";
+                $sql = "SELECT * FROM userlogin WHERE usersEmail=?;";
                 $stmt = mysqli_stmt_init($conn);
                 if (!mysqli_stmt_prepare($stmt,$sql)) {
                     echo "There was error2!";
@@ -67,7 +67,7 @@ if (isset($_POST["reset-password-submit"])) {
                     }
                     else
                     {
-                        $sql ="UPDATE users SET usersPwd=? WHERE usersEmail=?";
+                        $sql ="UPDATE userlogin SET usersPwd=? WHERE usersEmail=?";
                         $stmt = mysqli_stmt_init($conn);
                         if (!mysqli_stmt_prepare($stmt,$sql)) {
                         echo "There was error!4";
