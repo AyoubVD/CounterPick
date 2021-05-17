@@ -16,7 +16,7 @@
 
     <?php
 include_once('./includes/dbh.inc.php');
-$records = mysqli_query($conn,"select * from users"); // fetch data from database
+$records = mysqli_query($conn,"select * from userlogin"); // fetch data from database
 
 while($data = mysqli_fetch_array($records))
 {
