@@ -1,7 +1,5 @@
 <?php include_once "./components/header.php" ?>
-
 <section class="section-default">
-
                <?php 
                 $selector = $_GET["selector"];
                 $validator = $_GET["validator"];

@@ -1,4 +1,3 @@
-<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,24 +20,33 @@
     <div class="container-fluid" style="background-image: url('https://i.ytimg.com/vi/QzxSg4EfV60/maxresdefault.jpg');height:200px;"></div>      
     <header>
         <nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="197">
-            <ul class="nav navbar-nav" style="padding-left: 10%;float:right;"> 
-                <a href="index.php"><img id="logo" src="img/logo.png"></a>
-                <?php    
-                    if (isset($_SESSION["useruid"])) {
-                        echo "<li><a href='recruit.php'>Recruit</a></li>";
-                        echo "<li><a href='playafterlogin.php'>Play</a></li>";
+            <ul class="nav navbar-nav" style="padding-left: 10%;float:right; "> 
+                <?php 
+                    include_once './includes/init.php';
+                    if(isset($_SESSION['user_id']) && isset($_SESSION['email'])){
+                        $user_data = $user_obj->find_user_by_id($_SESSION['user_id']);
+                        if($user_data ===  false){
+                            header('Location: logout.php');
+                            exit;
+                        }
+                        echo "<a href='indexafterlogin.php'><img id='logo' src='img/logo.png'></a>";
+                        echo "<li><a href='recruit.php'>Find Team</a></li>";
+                        echo "<li><a href='standingafter.php'>Standing</a></li>";
+                        echo "<li><a href='play_after_log_in.php'>Play</a></li>";
                         echo "<li><a href='profile.php'>Profile</a></li>";
-                        echo "<li><a href='createteam.php'>Create Team</a></li>";
                         echo "<li><a href='./includes/logout.inc.php'>Log out</a></li>";
-                        echo "<li><a href='contact.php'>Contact</a></li>"; 
-                    }
+                        echo "<li><a href='contact.php'>Contact</a></li>";
+                        echo "<li><a href='settings.php'>Settings</a></li>";                     
+                        }   
                     else
                     {
-                        echo "<li><a href='login.php'>Recruit</a></li>";
+                        echo "<a href='index.php'><img id='logo' src='img/logo.png'></a>";
+                        echo "<li><a href='login_as.php'>Recruit</a></li>";
+                        echo "<li><a href='standing.php'>Standing</a></li>";
                         echo "<li><a href='play.php'>Play</a></li>";
-                        echo "<li><a href='signup.php'>Sign up</a></li>";
-                        echo "<li><a href='login.php'>Login</a></li>";
-                        echo "<li><a href='contact.php'>Contact</a></li>";              
+                        echo "<li><a href='signup_as.php'>Sign up</a></li>";
+                        echo "<li><a href='login_as.php'>Login</a></li>";
+                        echo "<li><a href='contact.php'>Contact</a></li>";
                     }           
                 ?>
             </ul>
@@ -46,4 +54,6 @@
     </header>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+ 
 

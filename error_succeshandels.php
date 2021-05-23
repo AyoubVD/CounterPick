@@ -5,6 +5,7 @@ if (isset($_GET["error"])) {
    if ($_GET["error"] == "none") {
         echo "<p style='color:green;'>You have signed up!</p>";
     }
+    
     if ($_GET["error"] == "emptypassword") {
         echo "<p style='color:red;'>Failed to create no input!</p>";
     }
@@ -38,7 +39,6 @@ if (isset($_GET["send"])) {
         echo "<p style='color:green;'> Mail Sent. Thank you, we will contact you shortly.</p>";
     }
 }
-
 ?>
 </div>      
 <?php include_once "./components/footer.php" ?>
