@@ -10,8 +10,8 @@ class User{
         $this->db = $db_connection;
     }
  
-    // SING UP USER
-    function singUpUser($username, $email, $password,$formGender,$rolerank,$bio,$looking){
+    // SING UP USER  summenername = $username  region =$region
+    function singUpUser($username, $email, $password,$formGender,$rolerank,$bio,$looking,$region){
         try{
             $this->user_name = trim($username);
             $this->user_email = trim($email);
@@ -35,6 +35,7 @@ class User{
                     if (!preg_match("/^[a-zA-Z0-9]*$/",$this->user_name)) {
                         return ['errorMessage' => 'Bad name make sure not to have symbols!'];
                     }
+                    //zet hier python summoner check "return ['errorMessage' => 'Bad name make sure not to have symbols!'];"
                     else{
                         
                         $user_image = $formGender;

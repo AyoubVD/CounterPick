@@ -2,8 +2,8 @@
 <?php
 include_once 'includes/init.php';
 // IF USER MAKING SIGNUP REQUEST
-if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['formGender'])&& isset($_POST['rolerank'])&& isset($_POST['bio'])){
-  $result = $user_obj->singUpUser($_POST['username'],$_POST['email'],$_POST['password'],$_POST['formGender'],$_POST['rolerank'],$_POST['bio']);
+if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['formGender'])&& isset($_POST['rolerank'])&& isset($_POST['bio']) && isset($_POST['region']) ){
+  $result = $user_obj->singUpUser($_POST['username'],$_POST['email'],$_POST['password'],$_POST['formGender'],$_POST['rolerank'],$_POST['bio'],$_POST['region']);
 }
 // IF USER ALREADY LOGGED IN
 if(isset($_SESSION['email'])){
@@ -20,6 +20,21 @@ if(isset($_SESSION['email'])){
       <br>
       <br>
       <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <br>
+      <br>
+      <h2>Select your rank</h2>
+      <select name="region" required>
+      <option value="0">Unranked</option>
+      <option value="1">Iron</option>
+      <option value="2">Bronze</option>
+      <option value="3">Silver</option>
+      <option value="4">Gold</option>
+      <option value="5">Platinum</option>
+      <option value="6">Diamond</option>
+      <option value="7">Master</option>
+      <option value="8">Grandmaster</option>
+      <option value="9">Challenger</option>
+      </select>
       <br>
       <br>
       <h2>Select your rank</h2>
