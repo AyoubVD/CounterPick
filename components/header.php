@@ -46,7 +46,7 @@
                         echo "<li><a href='play.php'>Play</a></li>";
                         echo "<li><a href='signup_as.php'>Sign up</a></li>";
                         echo "<li><a href='login_as.php'>Login</a></li>";
-                        echo "<li><a href='contact.php'>Contact</a></li>";
+                        echo "<li><a href='contact_login.php'>Contact</a></li>";
                     }           
                 ?>
             </ul>
