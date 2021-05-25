@@ -22,18 +22,11 @@ if(isset($_SESSION['email'])){
       <input type="password" id="password" name="password" placeholder="Enter your password" required>
       <br>
       <br>
-      <h2>Select your rank</h2>
+      <h2>Select your REGION</h2>
       <select name="region" required>
-      <option value="0">Unranked</option>
-      <option value="1">Iron</option>
-      <option value="2">Bronze</option>
-      <option value="3">Silver</option>
-      <option value="4">Gold</option>
-      <option value="5">Platinum</option>
-      <option value="6">Diamond</option>
-      <option value="7">Master</option>
-      <option value="8">Grandmaster</option>
-      <option value="9">Challenger</option>
+      <option value="EUNE">EUNE</option>
+      <option value="TR">TURKEY</option>
+      <option value="EUW">EUW</option>
       </select>
       <br>
       <br>
