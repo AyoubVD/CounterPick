@@ -36,8 +36,8 @@ $scheduleBuilder->setRounds((($count = count($teams)) % 2 === 0 ? $count - 1 : $
 $scheduleBuilder->shuffle(18);
 $schedule = $scheduleBuilder->build();
 
-
 ?>
+<div class="contain"></div>
         <h1>Tournement</h1>
         <h2>Sample Full Schedule</h2>
         <h2> <?php echo date("Y/m/d")?> tournement ends in 3 months <?php echo date("Y/08/d")?></h2>
