@@ -25,12 +25,30 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                 <?php
                 if($all_users){
                     foreach($all_users as $row){
-                        echo '<div class="user_box">
-                                <div class="user_img"><img src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
-                                <h1>team:<div class="user_info"><span>'.$row->teamname.'</span></h1>
-                                <h1>Join if:<div class="user_info"><span>'.$row->looking.'</span></h1>
-                                <h1>win:<div class="user_info"><span>'.$row->win.'</span></h1>
-                                <h1>loss:<div class="user_info"><span>'.$row->loss.'</span></h1>
+                        echo '<div class="user_box" 
+                        style = "display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        border: 1px solid rgba(23,23,23, .2);
+                        margin: 5px;
+                        padding: 5px;
+                        width: 20%;
+                        background-color: #FFF;
+                        align-items: stretch;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        text-align: center;
+                        align-content: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        "
+                        >
+                                <div class="user_img"><img width="48" height="48" style="border-radius: 50%;" src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
+                                <h3>team:<div class="user_info"><span>'.$row->teamname.'</span></h3>
+                                <h3 style="width: 40%;" >Join if:<div class="user_info"><span>'.$row->looking.'</span></h3>
+                                <h3>win<div class="user_info"><span>'.$row->win.'</span></h3>
+                                <h3>/loss:<div class="user_info"><span>'.$row->loss.'</span></h3>
                                 <span><a href="user_profile.php?id='.$row->id.'" class="see_profileBtn">join team</a></div>
                             </div>';
                     }
