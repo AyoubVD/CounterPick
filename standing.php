@@ -16,7 +16,7 @@ while($data = mysqli_fetch_assoc($records))
 
 {
 ?>
-  <tr>
+  <tr >
     <td><?php echo $data['teamname']; ?></td>
     <td><?php echo $data['win']; ?></td>
     <td><?php echo $data['loss']; ?></td>

@@ -71,7 +71,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         border: 1px solid rgba(23,23,23, .2);
                         margin: 5px;
                         padding: 5px;
-                        width: 20%;
+                        width: 5%;
                         background-color: #FFF;
                         align-items: stretch;
                         display: flex;
@@ -82,9 +82,9 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         margin-left: auto;
                         margin-right: auto;
                         ">
-                                <div class="user_img"><img width="48" height="48"  src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
-                                <h1>team:<div class="user_info"><span>'.$row->teamname.'</span></h1>
-                                <span><a href="user_profile.php?id='.$row->id.'" class="see_profileBtn">See Team profile</a></div>
+                                <div class="user_img"><img width="30" height="30"  src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
+                                <h6>team:<div class="user_info"><span>'.$row->teamname.'</span></h6>
+                                <span><a style ="text-align: center;" href="user_profile.php?id='.$row->id.'" class="see_profileBtn">See Team profile</a></div>
                             </div>';
                     }
                 }

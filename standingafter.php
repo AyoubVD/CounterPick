@@ -19,7 +19,23 @@ $get_req_num = $frnd_obj->request_notification($_SESSION['user_id'], false);
 $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 ?>
 <?php include_once "./components/header.php" ?>
-<table class="table table-striped">
+<table class="table table-striped" style = "display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        border: 1px solid rgba(23,23,23, .2);
+                        margin: 5px;
+                        padding: 5px;
+                        width: 10%;
+                        background-color: #FFF;
+                        align-items: stretch;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        text-align: center;
+                        align-content: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        ">
     <thead>
         <tr>
             <th>Team name</th>
@@ -36,7 +52,7 @@ while($data = mysqli_fetch_assoc($records))
 
 {
 ?>
-  <tr>
+  <tr >
     <td><?php echo $data['teamname']; ?></td>
     <td><?php echo $data['win']; ?></td>
     <td><?php echo $data['loss']; ?></td>
