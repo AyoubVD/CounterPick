@@ -30,11 +30,61 @@ while($data  = $records->fetch_assoc())
     $teams[] = $data['teamname'];
 
 }
-$scheduleBuilder = new ScheduleBuilder();
-$scheduleBuilder->setTeams($teams);
-$scheduleBuilder->setRounds((($count = count($teams)) % 2 === 0 ? $count - 1 : $count) * 2);
-$scheduleBuilder->shuffle(18);
-$schedule = $scheduleBuilder->build();
+
+
+?>
+
+<?php
+// connect to database
+
+
+$servername = "ID328593_counterpick.db.webhosting.be";
+$username = "ID328593_counterpick";
+$password = "counterPick123";
+$dbname = "ID328593_counterpick";
+
+// Create connection
+$con = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($con->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+
+
+// define how many results you want per page
+$results_per_page = 10;
+
+// find out the number of results stored in database
+$sql='SELECT * FROM users';
+$result = mysqli_query($con, $sql);
+$number_of_results = mysqli_num_rows($result);
+
+// determine number of total pages available
+$number_of_pages = ceil($number_of_results/$results_per_page);
+
+// determine which page number visitor is currently on
+if (!isset($_GET['page'])) {
+  $page = 1;
+} else {
+  $page = $_GET['page'];
+}
+
+// determine the sql LIMIT starting number for the results on the displaying page
+$this_page_first_result = ($page-1)*$results_per_page;
+
+// retrieve selected results from database and display them on page
+$sql='SELECT * FROM users LIMIT ' . $this_page_first_result . ',' .  $results_per_page;
+$result = mysqli_query($con, $sql);
+
+while($row = mysqli_fetch_array($result)) {
+  echo $row['id'] . ' ' . $row['teamname']. '<br>';
+}
+
+// display the links to the pages
+for ($page=1;$page<=$number_of_pages;$page++) {
+  echo '<a href="index.php?page=' . $page . '">' . $page . '</a> ';
+}
 
 ?>
 <div class="contain" style = "display: flex;
