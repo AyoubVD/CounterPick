@@ -39,7 +39,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
         <h1>Tournement rules</h1>
         <br>
         <h1>How to play?</h1>
-        <h6>You can only play 1 team every round and every round is 1 point if you win you get 1 point and you can only play the same team once every round and the Winner of the tournement can choose an icon and a team background.</h6>
+        <h6> play all teams in  every round and every round you win against a team you get 1 point  and you can only play the same team once every round and the Winner of the tournement can choose an icon and a team background.</h6>
         <h1>How to find a team to play against?</h1>
         <h6>There is a chat room where you can find a team to play against.</h6>
         <h1>How to submit win?</h1>
