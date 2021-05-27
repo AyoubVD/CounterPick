@@ -19,7 +19,7 @@ $get_req_num = $frnd_obj->request_notification($_SESSION['user_id'], false);
 $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 ?>
 <?php include_once "./components/header.php" ?>
-    <form action="Profile_update.php" method="post" style = "display: flex;
+    <form action="Profile_update.php" method="post" style = "display: flex; 
                         flex-wrap: wrap;
                         align-items: center;
                         border: 1px solid rgba(23,23,23, .2);
@@ -39,10 +39,10 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
            <h1>Change bio or role or status</h1>
            <h2>bio:</h2>
     <textarea rows="5" type="text" name="bio"  cols="30"></textarea><br>
-    <input type="submit" name="bio_update" value="edit">
+    <input  style="color:black;"  type="submit" name="bio_update" value="edit">
     <h2>looking for:</h2>
     <textarea rows="5" type="text" name="looking"  cols="30"></textarea><br>
-    <input type="submit" name="looking_update" value="edit">
+    <input  style="color:black;"  type="submit" name="looking_update" value="edit">
 
    <br>
  
@@ -50,7 +50,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
       <br>
       <br>
       <h2>Select your role</h2>
-      <select name="rolerank" required>
+      <select style="color:black;" name="rolerank" required>
       <option value="Any">Any</option>
       <option value="top">top</option>
       <option value="jungle">jungle</option>
@@ -61,7 +61,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
       <br>
       <br>
    
-   <input type="submit" name="edit" value='change'>
+   <input style="color:black;" type="submit" name="edit" value='change'>
    
 </form>      
 <?php include_once "./components/footer.php" ?>

@@ -49,7 +49,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
             <br>
             Message:<br><textarea rows="5" name="message" cols="30"></textarea>
             <br>
-            <input type="submit" name="submit" value="Submit">
+            <input style="color:black;" type="submit" name="submit" value="Submit">
         </form>
         <?php
             if (isset($_GET["error"])) {
