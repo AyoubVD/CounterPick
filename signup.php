@@ -2,8 +2,8 @@
 <?php
 include_once 'includes/init.php';
 // IF USER MAKING SIGNUP REQUEST
-if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['formGender'])&& isset($_POST['rolerank'])&& isset($_POST['bio']) && isset($_POST['region']) ){
-  $result = $user_obj->singUpUser($_POST['username'],$_POST['email'],$_POST['password'],$_POST['formGender'],$_POST['rolerank'],$_POST['bio'],$_POST['region']);
+if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['formGender'])&& isset($_POST['rolerank'])&& isset($_POST['bio'])&& isset($_POST['looking']) && isset($_POST['region']) ){
+  $result = $user_obj->singUpUser($_POST['username'],$_POST['email'],$_POST['password'],$_POST['formGender'],$_POST['rolerank'],$_POST['bio'],$_POST['looking'],$_POST['region']);
 }
 // IF USER ALREADY LOGGED IN
 if(isset($_SESSION['email'])){
