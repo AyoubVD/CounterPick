@@ -70,11 +70,11 @@ if(isset($_SESSION['email'])){
       <br>
       <br>
       <h2>Bio</h2>
-      <textarea style="color:black;" rows="5" name="bio" cols="30" placeholder ="Tell us about yourself"></textarea>
+      <textarea style="color:black;" rows="5" name="bio" cols="30" placeholder ="Tell us about yourself (max.50 characters)"></textarea>
       <br>
       <br>
       <h2>What are you looking for</h2>
-      <textarea style="color:black;" rows="5" name="looking" cols="30" placeholder ="Tell us about yourself"></textarea>
+      <textarea style="color:black;" rows="5" name="looking" cols="30" placeholder ="Tell us about yourself (max.16 characters)"></textarea>
       <br>
       <br>
       <input style="color:black;" type="submit" value="Sign Up">

@@ -40,11 +40,11 @@ if(isset($_SESSION['email'])){
       <br>
       <br>
       <h2>Team goal</h2>
-      <textarea style="color:black;" rows="5" name="bio" cols="30" placeholder ="Tell us about your team"></textarea>
+      <textarea style="color:black;" rows="5" name="bio" cols="30" placeholder ="Tell us about your team (max.50 characters)"></textarea>
       <br>
       <br>
       <h2>What players do you want</h2>
-      <textarea style="color:black;" rows="5" name="looking" cols="30" placeholder ="Tell us about your team"></textarea>
+      <textarea style="color:black;" rows="5" name="looking" cols="30" placeholder ="Tell us about your team (max.16 characters)"></textarea>
       <br>
       <br>
       <input style="color:black;" type="submit" value="Sign Up">
