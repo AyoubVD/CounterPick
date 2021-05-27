@@ -96,13 +96,17 @@ body                            { text-align: left; }
 </head>
 
 <body onload="setInterval('chat.update()', 1000)" >
-
-<h1 style="text-align:center;">Find teams to play against!</h1>
+<div class="above"  style = "
+                        margin: 600px;
+                        margin-top: auto;
+                        background-image: url(https://www.wallpapertip.com/wmimgs/59-594557_league-of-legends-neon.jpg);"
+                         >
+<h1 style="text-align:center;color:white;">Find teams to play against!</h1>
 
     <div id="page-wrap" >
     
-        <h2 style="text-align:center;"> Chat</h2>
-        
+        <h2 style="text-align:center;color:white;"> Chat</h2>
+        </div>
         <p id="name-area"></p>
         
         <div id="chat-wrap"><div id="chat-area"></div></div>
@@ -125,14 +129,18 @@ body                            { text-align: left; }
                         margin-right: auto;
                         background-image: url(https://www.wallpapertip.com/wmimgs/59-594557_league-of-legends-neon.jpg);"
                         >
-            <p style="color:white;">Your message: </p>
+            <p style="color:white;">Your message:</p>
+            
+            
             <textarea id="sendie" maxlength = '100' placeholder ="type message and enter"></textarea>
         </form>
-    
+        <h4><a style="color:white;" href='contact.php'><u>Report</u></a></h4>
     </div>
-
-
-
-<?php include_once "footer.php" ?>
+    <footer style="color:white;">
+    <a style="color:white;" href="https://counterpick123.wordpress.com/">About us</a>
+    <a style="color:white;" href="#">Teaser</a>
+    <br>
+    © 2021 - Counterpick - Thomas More
+</footer>
 </body>
 </html>
