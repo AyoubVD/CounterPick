@@ -21,17 +21,34 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 <?php include_once "header.php" ?>
     <div class="profile_container">
 
-        <div class="inner_profile">
+        <div class="inner_profile" style = "display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        border: 1px solid rgba(23,23,23, .2);
+                        margin: 5px;
+                        padding: 50px;
+                        width: 20%;
+                        background-color: #FFF;
+                        align-items: stretch;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        text-align: center;
+                        align-content: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-image: url(https://i.pinimg.com/736x/c1/7f/31/c17f318095085ff32bb7fadbb1f9a89a.jpg);color:white;">
             <div class="img">
-                <img src="profile_images/<?php echo $user_data->user_image; ?>" alt="Profile image">
+                <img width="48" height="48" src="profile_images/<?php echo $user_data->user_image; ?>" alt="Profile image">
+                <h1>team:<?php echo  $user_data->teamname;?></h1>
+            </div>
             </div>
             <h1>team:<?php echo  $user_data->teamname;?></h1>
             <h1>info:<?php echo  $user_data->bio;?></h1>
             <h1>looking:<?php echo  $user_data->looking;?></h1>
             <h1>win:<?php echo  $user_data->win;?></h1>
             <h1>loss:<?php echo  $user_data->loss;?></h1>
-            
-        </div>
+        <br>
         <nav>
             <ul>
                 <li><a href="notifications_team.php" rel="noopener noreferrer">Requests<span class="badge <?php
