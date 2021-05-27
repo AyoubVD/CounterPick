@@ -18,6 +18,14 @@ $get_req_num = $frnd_obj->request_notification($_SESSION['user_id'], false);
 // TOTAL FRIENDS
 $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 ?>
+ <?php
+        if(isset($result['errorMessage'])){
+          echo '<p style="color:red; class="errorMsg">'.$result['errorMessage'].'</p>';
+        }
+        if(isset($result['successMessage'])){
+          echo '<p  style="color:green;" class="successMsg">'.$result['successMessage'].'</p>';
+        }       
+      ?> 
 <?php include_once "header.php" ?>
     <div class="profile_container">
 
@@ -60,7 +68,8 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                 <li><a href='settings.php'>Settings</a></li>
             </ul>
         </nav>   
-    </div>      
+    </div>
+         
 <?php include_once "footer.php" ?>
 </body>
 </html>

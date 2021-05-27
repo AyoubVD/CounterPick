@@ -45,7 +45,14 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
     <h2>Change info:</h2>
     <textarea style="color:black;" rows="5" type="text" name="looking"  cols="30"></textarea><br>
     <input style="color:black;" type="submit" name="looking_update" value="edit">
-   
+    <?php
+        if(isset($result['errorMessage'])){
+          echo '<p style="color:red; class="errorMsg">'.$result['errorMessage'].'</p>';
+        }
+        if(isset($result['successMessage'])){
+          echo '<p  style="color:green;" class="successMsg">'.$result['successMessage'].'</p>';
+        }       
+      ?> 
 </form>      
 <?php include_once "footer.php" ?>
 </body>
