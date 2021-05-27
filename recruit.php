@@ -99,11 +99,6 @@ while ($row = mysqli_fetch_array($result)) {
                     <h3>/loss:<div class="user_info"><span>'.$row['loss'].'</span></h3>
                    
                 </div>';
-                
-        
-    
-
-
 }  
 
 echo '<p>Select page</p>';
