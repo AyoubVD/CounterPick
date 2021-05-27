@@ -142,5 +142,20 @@ class User{
             die($e->getMessage());
         }
     }
+    function all_usersz($id){
+        try{
+            $get_users = $this->db->prepare("SELECT id,plaats, teamname, user_image,win,loss FROM `users` WHERE team_or_player = 'team' and id != ? order by win  DESC");
+            $get_users->execute([$id]);
+            if($get_users->rowCount() > 0){
+                return $get_users->fetchAll(PDO::FETCH_OBJ);
+            }
+            else{
+                return false;
+            }
+        }
+        catch (PDOException $e) {
+            die($e->getMessage());
+        }
+    }
 }
 ?>
