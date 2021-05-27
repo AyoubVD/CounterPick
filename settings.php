@@ -24,7 +24,6 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         align-items: center;
                         border: 1px solid rgba(23,23,23, .2);
                         margin: 5px;
-                        padding: 50px;
                         width: 20%;
                         background-color: #FFF;
                         align-items: stretch;
@@ -35,22 +34,17 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
-                        padding:51px;
+                        padding:50px;
                         background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,h_630,f_auto,q_auto,g_auto/shape/cover/sport/5c2cd98abb4b87834e000001.jpeg);color:white;">
-           <h1>Change bio or role or status</h1>
-           <h2>bio:</h2>
-    <textarea style="color:black;" rows="5" type="text" name="bio"  cols="30"></textarea><br>
+           <h1>Change bio or role or info</h1>
+    <div>change bio</div><textarea style="color:black;" rows="5" type="text" name="bio"  cols="30"></textarea><br>
     <input  style="color:black;"  type="submit" name="bio_update" value="edit">
-    <br><h2>looking for:</h2>
-    <textarea style="color:black;" rows="5" type="text" name="looking"  cols="30"></textarea><br>
+    <div>change info</div><textarea style="color:black;" rows="5" type="text" name="looking"  cols="30"></textarea><br>
     <input  style="color:black;"  type="submit" name="looking_update" value="edit">
-
-   <br>
- 
+    <div>Select your role</div>
    </select>
       <br>
       <br>
-      <h2>Select your role</h2>
       <select style="color:black;" name="rolerank" required>
       <option value="Any">Any</option>
       <option value="top">top</option>

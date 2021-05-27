@@ -32,7 +32,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         border: 1px solid rgba(23,23,23, .2);
                         margin: 5px;
                         padding: 5px;
-                        width: 20%;
+                        width: 50%;
                         background-color: #FFF;
                         align-items: stretch;
                         display: flex;
@@ -43,11 +43,10 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         margin-left: auto;
                         margin-right: auto;
                         background-image: url(https://i.pinimg.com/736x/c1/7f/31/c17f318095085ff32bb7fadbb1f9a89a.jpg);color:white;"
-                        >
+                        >        <h2><span><a style="color:white;"href="user_profile.php?id='.$row->id.'" class="see_profileBtn">invite player</a></h2>
                                 <div class="user_img"><img width="48" height="48" style="border-radius: 50%;" src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
                                 <h3>Player:<div class="user_info"><span>'.$row->username.'</span></h3>
                                 <h3 style="width: 40%;" >looking for:<div class="user_info"><span>'.$row->looking.'</span></h3>
-                                <span><a style="color:white;"href="user_profile.php?id='.$row->id.'" class="see_profileBtn">invite player</a></div>
                             </div>';
                     }
                 }

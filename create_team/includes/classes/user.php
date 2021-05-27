@@ -39,18 +39,24 @@ class User{
                     if (!preg_match("/^[a-zA-Z0-9]*$/",$this->user_name)) {
                         return ['errorMessage' => 'This Email Address is already registered. Please Try another.'];
                     }
+                    if (strlen($this->user_name) > 16) {
+                        return ['errorMessage' => 'Username cannot be over 16 characters!'];
+                    }
+                    if (strlen($looking) > 16) {
+                        return ['errorMessage' => 'Looking for cannot be over 16 characters!'];
+                    }
                     else{
                         
                         $user_image = rand(20,40);
 
                         $this->hash_pass = password_hash($this->user_pass, PASSWORD_DEFAULT);
-                        $sql = "INSERT INTO `users` (teamname, user_email, user_password, user_image,team_or_player,bio,looking) VALUES(:looking,:teamname,:user_email, :user_pass, :user_image,:team_or_player,:bio)";
+                        $sql = "INSERT INTO `users` (teamname, user_email, user_password, user_image,team_or_player,bio,looking) VALUES(:teamname,:user_email, :user_password, :user_image,:team_or_player,:bio,:looking)";
             
                         $sign_up_stmt = $this->db->prepare($sql);
                         //BIND VALUES MUST HAVE THESE TO LOG IN
                         $sign_up_stmt->bindValue(':teamname',htmlspecialchars($this->user_name), PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':user_email',$this->user_email, PDO::PARAM_STR);
-                        $sign_up_stmt->bindValue(':user_pass',$this->hash_pass, PDO::PARAM_STR);
+                        $sign_up_stmt->bindValue(':user_password',$this->hash_pass, PDO::PARAM_STR);
                         // INSERTING whatever you want from database counterpick123
                         $sign_up_stmt->bindValue(':user_image',$user_image.'.png', PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':team_or_player','team', PDO::PARAM_STR);

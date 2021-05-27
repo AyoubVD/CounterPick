@@ -35,19 +35,25 @@ class User{
                     if (!preg_match("/^[a-zA-Z0-9]*$/",$this->user_name)) {
                         return ['errorMessage' => 'Bad name make sure not to have symbols!'];
                     }
+                    if (strlen($this->user_name) > 16) {
+                        return ['errorMessage' => 'Username cannot be over 16 characters!'];
+                    }
+                    if (strlen($looking) > 16) {
+                        return ['errorMessage' => 'Looking for cannot be over 16 characters!'];
+                    }
                     //zet hier python summoner check "return ['errorMessage' => 'Bad name make sure not to have symbols!'];"
                     else{
                         
                         $user_image = $formGender;
 
                         $this->hash_pass = password_hash($this->user_pass, PASSWORD_DEFAULT);
-                        $sql = "INSERT INTO `users` (username, user_email, user_password,looking, user_image,rank,role,team_or_player,bio) VALUES(:looking,:username, :user_email, :user_pass, :user_image,:rank,:role,:team_or_player,:bio)";
+                        $sql = "INSERT INTO `users` (username, user_email, user_password,user_image,rank,role,team_or_player,bio,looking) VALUES(:username, :user_email, :user_password, :user_image,:rank,:role,:team_or_player,:bio,:looking)";
             
                         $sign_up_stmt = $this->db->prepare($sql);
                         //BIND VALUES MUST HAVE THESE TO LOG IN
                         $sign_up_stmt->bindValue(':username',htmlspecialchars($this->user_name), PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':user_email',$this->user_email, PDO::PARAM_STR);
-                        $sign_up_stmt->bindValue(':user_pass',$this->hash_pass, PDO::PARAM_STR);
+                        $sign_up_stmt->bindValue(':user_password',$this->hash_pass, PDO::PARAM_STR);
                         // INSERTING whatever you want from database counterpick123
                         $sign_up_stmt->bindValue(':user_image',$user_image.'.png', PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':rank',$user_image, PDO::PARAM_STR);
