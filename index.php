@@ -16,7 +16,8 @@
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
-                        ">
+                        background-image: url('https://candid.technology/wp-content/uploads/2019/10/League-of-Legends-Wallpaper-19.jpg');
+                        color:white;">
             
             <h2>What is CounterPick?</h2>
             <br>
@@ -39,7 +40,12 @@
             <p>LOL installed, updated web browser and a stable network connection.test</p>      
             <p>As you can see this isn't a lot, so what's holding you back? <br>
             Come and join the community to become a better League player!</p>
-<?php include_once "./components/footer.php" ?>
+            <footer style="color:white;">
+    <a style="color:white;" href="https://counterpick123.wordpress.com/">About us</a>
+    <a style="color:white;" href="#">Teaser</a>
+    <br>
+    © 2021 - Counterpick - Thomas More
+</footer>
 </body>
 </html>
 

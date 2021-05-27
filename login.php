@@ -31,10 +31,10 @@
     
     <form action="login.php" method="POST">
     <h1>Player</h1>
-      <input type="text" id="email" name="email" spellcheck="false" placeholder="Enter your username" required>
+      <input style="color:black;" type="text" id="email" name="email" spellcheck="false" placeholder="Enter your username" required>
       <br>
       <br>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input  style="color:black;" type="password" id="password" name="password" placeholder="Enter your password" required>
       <br>
       <br>
   
@@ -52,7 +52,7 @@
     </div>
     </form>
   </div>
-        <a href="reset-password.php">Forgot your password?<b>click here</b></a>
+        <a  href="reset-password.php">Forgot your password?<b>click here</b></a>
         <br>
         <a href="signup.php">Don't have an account yet?<b>click here</b></a>
 <?php include_once "./components/footer.php" ?>

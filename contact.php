@@ -38,16 +38,16 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,h_630,f_auto,q_auto,g_auto/shape/cover/sport/5c2cd98abb4b87834e000001.jpeg);color:white;">
         <h1>Contact us</h1>
         <form action="./includes/contact.inc.php" method="post">
-            First Name:<br> <input type="text" name="first_name">
+            First Name:<br> <input style="color:black;" type="text" name="first_name">
             <br>
             <br>
-            Last Name:<br> <input type="text" name="last_name">
+            Last Name:<br> <input style="color:black;" type="text" name="last_name">
             <br>
             <br>
-            Email:<br><input type="text" name="email">
+            Email:<br><input style="color:black;"  type="text" name="email">
             <br>
             <br>
-            Message:<br><textarea rows="5" name="message" cols="30"></textarea>
+            Message:<br><textarea style="color:black;"  rows="5" name="message" cols="30"></textarea>
             <br>
             <input style="color:black;" type="submit" name="submit" value="Submit">
         </form>

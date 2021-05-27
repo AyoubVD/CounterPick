@@ -30,17 +30,17 @@ if(isset($_SESSION['email'])){
                         background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,h_630,f_auto,q_auto,g_auto/shape/cover/sport/5c2cd98abb4b87834e000001.jpeg);color:white;">
     <h1>Create Player</h1>
     <form action="" method="POST" novalidate>
-      <input type="text" id="username" name="username" spellcheck="false" placeholder="Enter your Player name" required>
+      <input style="color:black;" type="text" id="username" name="username" spellcheck="false" placeholder="Enter your Player name" required>
       <br>
       <br>
-      <input type="email" id="email" name="email" spellcheck="false" placeholder="Enter your email address" required>
+      <input style="color:black;" type="email" id="email" name="email" spellcheck="false" placeholder="Enter your email address" required>
       <br>
       <br>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input style="color:black;" type="password" id="password" name="password" placeholder="Enter your password" required>
       <br>
       <br>
       <h2>Select your REGION</h2>
-      <select name="region" required>
+      <select name="region" required style="color:black;">
       <option value="EUNE">EUNE</option>
       <option value="TR">TURKEY</option>
       <option value="EUW">EUW</option>
@@ -48,7 +48,7 @@ if(isset($_SESSION['email'])){
       <br>
       <br>
       <h2>Select your rank</h2>
-      <select name="formGender" required>
+      <select name="formGender" required style="color:black;">
       <option value="0">Unranked</option>
       <option value="1">Iron</option>
       <option value="2">Bronze</option>
@@ -63,7 +63,7 @@ if(isset($_SESSION['email'])){
       <br>
       <br>
       <h2>Select your role</h2>
-      <select name="rolerank" required>
+      <select name="rolerank" required style="color:black;">
       <option value="Any">Any</option>
       <option value="top">top</option>
       <option value="jungle">jungle</option>
@@ -74,14 +74,14 @@ if(isset($_SESSION['email'])){
       <br>
       <br>
       <h2>Bio</h2>
-      <textarea rows="5" name="bio" cols="30" placeholder ="Tell us about yourself"></textarea>
+      <textarea style="color:black;" rows="5" name="bio" cols="30" placeholder ="Tell us about yourself"></textarea>
       <br>
       <br>
       <h2>What are you looking for</h2>
-      <textarea rows="5" name="looking" cols="30" placeholder ="Tell us about yourself"></textarea>
+      <textarea style="color:black;" rows="5" name="looking" cols="30" placeholder ="Tell us about yourself"></textarea>
       <br>
       <br>
-      <input type="submit" value="Sign Up">
+      <input style="color:black;" type="submit" value="Sign Up">
     </form>
     <div>  
       <?php
@@ -93,9 +93,14 @@ if(isset($_SESSION['email'])){
         }       
       ?>    
     </div>
-            <a href="login.php">Already an account <b>click here</b></a>
+            <a style="color:white;"href="login.php">Already an account <b>click here</b></a>
 </section>       
-<?php include_once "./components/footer.php" ?>
+<footer style="color:white;">
+    <a style="color:white;" href="https://counterpick123.wordpress.com/">About us</a>
+    <a style="color:white;" href="#">Teaser</a>
+    <br>
+    © 2021 - Counterpick - Thomas More
+</footer>
 </body>
 </html>
 
