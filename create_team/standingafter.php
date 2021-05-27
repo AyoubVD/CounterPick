@@ -7,7 +7,7 @@ if(isset($_SESSION['user_id']) && isset($_SESSION['email'])){
         exit;
     }
     // FETCH ALL USERS WHERE ID IS NOT EQUAL TO MY ID
-    $all_users = $user_obj->all_usersz($_SESSION['user_id']);
+    $all_users = $user_obj->all_usersz($_SESSION['email']);
 }
 else{
     header('Location: logout.php');

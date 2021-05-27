@@ -29,7 +29,7 @@
                             header('Location: logout.php');
                             exit;
                         }
-                        echo "<a href='home.php'><img id='logo' src='img/logo.png'style='top:0%;'></a>";
+                        echo "<a href='home.php'><img id='logo' src='img/logo.png'></a>";
                         echo "<li><a href='recruit.php'>Recruit</a></li>";
                         echo "<li><a href='standingafter.php'>Standing</a></li>";
                         echo "<li><a href='play_after_log_in.php'>Play</a></li>";
@@ -37,7 +37,6 @@
                         echo "<li><a href='profile_team.php'>Profile</a></li>";
                         echo "<li><a href='../includes/logout.inc.php'>Log out</a></li>";
                         echo "<li><a href='contact.php'>Contact</a></li>";
-                        echo "<li><a href='settings.php'>Settings</a></li>"; 
                         }   
                     else
                     {

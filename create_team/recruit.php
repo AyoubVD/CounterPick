@@ -20,7 +20,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 ?>
 <?php include_once "header.php" ?>
 <div class="all_users">
-            <h3>All Teams</h3>
+            <h3>All Players</h3>
             <div class="usersWrapper">
                 <?php
                 if($all_users){
@@ -45,11 +45,9 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         background-image: url(https://i.pinimg.com/736x/c1/7f/31/c17f318095085ff32bb7fadbb1f9a89a.jpg);color:white;"
                         >
                                 <div class="user_img"><img width="48" height="48" style="border-radius: 50%;" src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
-                                <h3>team:<div class="user_info"><span>'.$row->teamname.'</span></h3>
-                                <h3 style="width: 40%;" >Join if:<div class="user_info"><span>'.$row->looking.'</span></h3>
-                                <h3>win<div class="user_info"><span>'.$row->win.'</span></h3>
-                                <h3>/loss:<div class="user_info"><span>'.$row->loss.'</span></h3>
-                                <span><a style="color:white;"href="user_profile.php?id='.$row->id.'" class="see_profileBtn">join team</a></div>
+                                <h3>Player:<div class="user_info"><span>'.$row->username.'</span></h3>
+                                <h3 style="width: 40%;" >looking for:<div class="user_info"><span>'.$row->looking.'</span></h3>
+                                <span><a style="color:white;"href="user_profile.php?id='.$row->id.'" class="see_profileBtn">invite player</a></div>
                             </div>';
                     }
                 }

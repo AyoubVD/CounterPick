@@ -30,6 +30,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
             <h1>looking:<?php echo  $user_data->looking;?></h1>
             <h1>win:<?php echo  $user_data->win;?></h1>
             <h1>loss:<?php echo  $user_data->loss;?></h1>
+            
         </div>
         <nav>
             <ul>
@@ -39,6 +40,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                 }
                 ?>"><?php echo $get_req_num;?></span></a></li>
                 <li><a href="friends_team.php" rel="noopener noreferrer">Players<span class="badge"><?php echo $get_frnd_num;?></span></a></li>
+                <li><a href='settings.php'>Settings</a></li>
             </ul>
         </nav>   
     </div>      
