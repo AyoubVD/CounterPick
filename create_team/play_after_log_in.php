@@ -55,17 +55,26 @@ $schedule = $scheduleBuilder->build();
                         margin-right: auto;
                         background-image: url(https://lolstatic-a.akamaihd.net/frontpage/apps/prod/clash-2018/en_GB/a46e742ae82f9d4f9db8e34ba57873e513e727b7/assets/static/img/backgrounds/brackets-bg.jpg);color:white;">
         <h1>Tournement</h1>
-        <h2>Sample Full Schedule</h2>
+        <br>
+        <h1>How to play?</h1>
+        <h2>Read this first!:</h2>
+        <br>
+        <h2><a style="color:white;" href='rules.php'><u>Rules</u></a></h2>
         <h2> <?php echo date("Y/m/d")?> tournement ends in 3 months <?php echo date("Y/08/d")?></h2>
         <?php foreach($schedule as $round => $matchups){ ?>
         <h3>Round <?=$round?></h3><br>
         <ul>
         <?php foreach($matchups as $matchup) { ?>
-            <li><?=$matchup[0] ?? '*NO OPPONENT*'?> vs. <?=$matchup[1] ?? '*BYE*'?></li>
+            <li><?=$matchup[0] ?? '*NO OPPONENT*'?> vs. <?=$matchup[1] ?? '*NO OPPONENT*'?></li>
         <?php } ?>
         </ul>
         <?php } ?>
         </div>
-<?php include_once "footer.php" ?>
+        <footer style="color:white;">
+    <a style="color:white;" href="https://counterpick123.wordpress.com/">About us</a>
+    <a style="color:white;" href="#">Teaser</a>
+    <br>
+    © 2021 - Counterpick - Thomas More
+</footer>
 </body>
 </html>

@@ -29,6 +29,8 @@ if(isset($_SESSION['email'])){
                         margin-right: auto;
                         background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,h_630,f_auto,q_auto,g_auto/shape/cover/sport/5c2cd98abb4b87834e000001.jpeg);color:white;">
     <h1>Create Player</h1>
+    <h2>You must give us your in game name!</h2>
+    <h6>(To make sure it is you and your account and your rank!)</h6>
     <form action="" method="POST" novalidate>
       <input style="color:black;" type="text" id="username" name="username" spellcheck="false" placeholder="Enter your Player name" required>
       <br>
@@ -53,12 +55,6 @@ if(isset($_SESSION['email'])){
       <option value="1">Iron</option>
       <option value="2">Bronze</option>
       <option value="3">Silver</option>
-      <option value="4">Gold</option>
-      <option value="5">Platinum</option>
-      <option value="6">Diamond</option>
-      <option value="7">Master</option>
-      <option value="8">Grandmaster</option>
-      <option value="9">Challenger</option>
       </select>
       <br>
       <br>

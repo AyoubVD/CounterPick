@@ -19,24 +19,6 @@ $get_req_num = $frnd_obj->request_notification($_SESSION['user_id'], false);
 $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 ?>
 <?php include_once "./components/header.php" ?>
-<?php
-include_once './src/round-robin.php';
-include_once './etc/dbh.inc.php';
-$records = mysqli_query($conn,"select teamname from users where team_or_player = 'team'"); // fetch data from database
-$teams = array();
-while($data  = $records->fetch_assoc())
-
-{
-    $teams[] = $data['teamname'];
-
-}
-$scheduleBuilder = new ScheduleBuilder();
-$scheduleBuilder->setTeams($teams);
-$scheduleBuilder->setRounds((($count = count($teams)) % 2 === 0 ? $count - 1 : $count) * 2);
-$scheduleBuilder->shuffle(18);
-$schedule = $scheduleBuilder->build();
-
-?>
 <div class="contain" style = "display: flex;
                         flex-wrap: wrap;
                         align-items: center;
@@ -54,21 +36,16 @@ $schedule = $scheduleBuilder->build();
                         margin-left: auto;
                         margin-right: auto;
                         background-image: url(https://lolstatic-a.akamaihd.net/frontpage/apps/prod/clash-2018/en_GB/a46e742ae82f9d4f9db8e34ba57873e513e727b7/assets/static/img/backgrounds/brackets-bg.jpg);color:white;">
-        <h1>Tournement</h1>
+        <h1>Tournement rules</h1>
         <br>
         <h1>How to play?</h1>
-        <h2>Read this first!:</h2>
-        <br>
-        <h2><a style="color:white;" href='rules.php'><u>Rules</u></a></h2>
-        <h2> <?php echo date("Y/m/d")?> tournement ends in 3 months <?php echo date("Y/08/d")?></h2>
-        <?php foreach($schedule as $round => $matchups){ ?>
-        <h3>Round <?=$round?></h3><br>
-        <ul>
-        <?php foreach($matchups as $matchup) { ?>
-            <li><?=$matchup[0] ?? '*NO OPPONENT*'?> vs. <?=$matchup[1] ?? '*NO OPPONENT*'?></li>
-        <?php } ?>
-        </ul>
-        <?php } ?>
+        <h6>You can only play 1 team every round and every round is 1 point if you win you get 1 point and you can only play the same team once every round and the Winner of the tournement can choose an icon and a team background.</h6>
+        <h1>How to find a team to play against?</h1>
+        <h6>There is a chat room where you can find a team to play against.</h6>
+        <h1>How to submit win?</h1>
+        <h6>Go to contact page and send link to vod or give us a link to the vod also very important send which round you played the team example: round 1: your team vs your opponent team</h6>
+        <h1>How to report?</h1>
+        <h6>Go to contact page and give us the reason exampl:toxic player, cheating team, smurfing team/player etc. </h6>
         </div>
         <footer style="color:white;">
     <a style="color:white;" href="https://counterpick123.wordpress.com/">About us</a>

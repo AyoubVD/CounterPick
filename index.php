@@ -37,11 +37,13 @@
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
-                        background-image: url('https://www.wallpapertip.com/wmimgs/59-594557_league-of-legends-neon.jpg');
+                        background-image: url('https://candid.technology/wp-content/uploads/2019/10/League-of-Legends-Wallpaper-19.jpg');
                         color:white;">
             
             <h2>What is CounterPick?</h2>
             <br>
+            <h2>Do not smurf please!</h2>
+            <h2>This is for beginners and for players from unranked to silver!</h2>
             <h3>CounterPick is <u>four</u> points</h3>
             <br>
             <p>To help and guide anyone who wants to play competitively at the amateur level.</p>
