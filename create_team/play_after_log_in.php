@@ -20,21 +20,63 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 ?>
 <?php include_once "header.php" ?>
 <?php
-include_once './src/round-robin.php';
-include_once './etc/dbh.inc.php';
-$records = mysqli_query($conn,"select teamname from users where team_or_player = 'team'"); // fetch data from database
+$servername = "ID328593_counterpick.db.webhosting.be";
+$username = "ID328593_counterpick";
+$password = "counterPick123";
+$dbname = "ID328593_counterpick";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+  
+//define total number of results you want per page  
+$results_per_page = 5;  
+
+//find the total number of results stored in the database  
+$query = "select *from users where team_or_player = 'team'";  
+$result = mysqli_query($conn, $query);  
+$number_of_result = mysqli_num_rows($result);  
+
+//determine the total number of pages available  
+$number_of_page = ceil ($number_of_result / $results_per_page);  
+
+//determine which page number visitor is currently on  
+if (!isset ($_GET['page']) ) {  
+    $page = 1;  
+} else {  
+    $page = $_GET['page'];  
+}  
+
+//determine the sql LIMIT starting number for the results on the displaying page  
+$page_first_result = ($page-1) * $results_per_page;  
+
+//retrieve the selected results from database   
+$query = "SELECT teamname FROM users where team_or_player = 'team' LIMIT " . $page_first_result . ',' . $results_per_page ;  
+$result = mysqli_query($conn, $query);  
 $teams = array();
-while($data  = $records->fetch_assoc())
+//display the retrieved result on the webpage  
+while ($row = mysqli_fetch_array($result)) {   
+     $teams[] = $row['teamname'];
 
-{
-    $teams[] = $data['teamname'];
 
-}
+}  
+include_once './src/round-robin.php';
+include_once './etc/dbh.inc.php'; 
+
 $scheduleBuilder = new ScheduleBuilder();
 $scheduleBuilder->setTeams($teams);
-$scheduleBuilder->setRounds((($count = count($teams)) % 2 === 0 ? $count - 1 : $count) * 2);
+$scheduleBuilder->setRounds(6);
 $scheduleBuilder->shuffle(18);
 $schedule = $scheduleBuilder->build();
+echo '<p>Select page</p>';
+//display the link of the pages in URL  
+for($page = 1; $page<= $number_of_page; $page++) {  
+    echo '<a href = "play_after_log_in.php?page=' . $page . '">' . $page . ' </a>';  
+}  
+
 
 ?>
 <div class="contain" style = "display: flex;
@@ -70,6 +112,15 @@ $schedule = $scheduleBuilder->build();
         </ul>
         <?php } ?>
         </div>
+        <?php 
+        //display the link of the pages in URL  
+for($page = 1; $page<= $number_of_page; $page++) {  
+    echo '<a style="color:white;" href = "play_after_log_in.php?page=' . $page . '">' . $page . ' </a>';  
+}  
+echo '<p style="color:white;" >Select page</p>';
+
+?>
+
         <footer style="color:white;">
     <a style="color:white;" href="https://counterpick123.wordpress.com/">About us</a>
     <a style="color:white;" href="#">Teaser</a>
