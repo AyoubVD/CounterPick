@@ -60,8 +60,7 @@ $teams = array();
 //display the retrieved result on the webpage
 
 ?>
-<h3>All Teams</h3> 
-
+<h3 style="word-spacing:70px;" >Place Team Wins/Loss</h3>
 <?php 
 echo '<p>Select page</p>';
 //display the link of the pages in URL  

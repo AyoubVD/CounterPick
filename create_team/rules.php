@@ -36,7 +36,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         margin-left: auto;
                         margin-right: auto;
                         background-image: url(https://lolstatic-a.akamaihd.net/frontpage/apps/prod/clash-2018/en_GB/a46e742ae82f9d4f9db8e34ba57873e513e727b7/assets/static/img/backgrounds/brackets-bg.jpg);color:white;">
-        <h1>Tournement rules</h1>
+          <h1>Tournement rules</h1>
         <br>
         <h1>How to play?</h1>
         <h6> Make a team assamble your teamates(friends) you can find players here aswell (go to recruit) add them and add them in the game there ign is given.Every round you play 1 team and every round you win against a team you get 1 point  and you will only play the same team once.You can start anywhere just make sure you fight the opponent of that round and dont play them twice The Winner of the tournement can choose an icon and a team background.</h6>
