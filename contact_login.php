@@ -1,5 +1,6 @@
 <?php include_once "./components/header.php" ?>
     <div class="signup-form">
+         <h1>Contact us</h1>
         <form action="./includes/contact.inc.php" method="post">
             First Name:<br> <input type="text" name="first_name">
             <br>

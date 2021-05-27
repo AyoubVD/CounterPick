@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./css/general.css" >
     <link rel="shortcut icon" type="image/png" href="./img/logowhite.jpg">
 </head>
-<body>   
+<body style="background-repeat: repeat;">   
     <div class="container-fluid" style="background-image: url('https://i.ytimg.com/vi/QzxSg4EfV60/maxresdefault.jpg');height:200px;"></div>      
     <header>
         <nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="197">

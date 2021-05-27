@@ -1,7 +1,25 @@
 <?php include_once "./components/header.php" ?>
-        <div id="content" style='text-align: center;'>
-            <h2>What is CounterPick</h2>
-            <br>
+<h1 style='background-image: url("https://nochii.com/nl/wp-content/uploads/2017/10/esports.jpg");color:white; padding: 6%;'>Welkom bij Counterpick!</h1>
+        <div id="content" style = "display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        border: 1px solid rgba(23,23,23, .2);
+                        margin: 5px;
+                        padding: 5px;
+                        width: 40%;
+                        background-color: #FFF;
+                        align-items: stretch;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        text-align: center;
+                        align-content: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        ">
+            
+            <h2>What is CounterPick?</h2>
+           
             <h3>CounterPick is <u>four</u> points</h3>
             <br>
             <p>To help and guide anyone who wants to play competitively at the amateur level.</p>
@@ -33,21 +51,11 @@
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             <p>As you can see this isn't a lot, so what's holding you back? <br>
             Come and join the community to become a better League player!</p>
+            <br>
+            <br>
+            <br>
 <?php include_once "./components/footer.php" ?>
 </body>
 </html>
