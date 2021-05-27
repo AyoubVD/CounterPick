@@ -42,7 +42,7 @@
                     {
                         echo "<a href='index.php'><img id='logo' src='img/logo.png'></a>";
                         echo "<li><a href='login_as.php'>Recruit</a></li>";
-                        echo "<li><a href='standing.php'>Standing</a></li>";
+                        echo "<li><a href='login_as.php'>Standing</a></li>";
                         echo "<li><a href='play.php'>Play</a></li>";
                         echo "<li><a href='signup_as.php'>Sign up</a></li>";
                         echo "<li><a href='login_as.php'>Login</a></li>";
