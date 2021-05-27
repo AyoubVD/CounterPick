@@ -37,7 +37,7 @@
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
-                        background-image: url('https://candid.technology/wp-content/uploads/2019/10/League-of-Legends-Wallpaper-19.jpg');
+                        background-image: url('https://www.wallpapertip.com/wmimgs/59-594557_league-of-legends-neon.jpg');
                         color:white;">
             
             <h2>What is CounterPick?</h2>

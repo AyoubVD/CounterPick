@@ -20,8 +20,14 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 ?>
 <?php include_once "header.php" ?>
     
-    <title>Chat</title>
-   
+    
+    <style>
+body                            { text-align: left; }
+#page-wrap                      { width: 500px; margin: 30px auto; position: relative; }
+#chat-area                      { color:black;height: 300px; overflow: auto; border: 1px solid #666; padding: 20px; background:white;border-style: solid;border-color: green;}
+#chat-area span                 { color: black; background:green; padding: 4px 8px; -moz-border-radius: 5px; -webkit-border-radius: 8px; margin: 0 5px 0 0; }
+
+</style>
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="chat.js"></script>
@@ -91,15 +97,16 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 
 <body onload="setInterval('chat.update()', 1000)" >
 
-<h1>Find teams to play against!</h1>
+<h1 style="text-align:center;">Find teams to play against!</h1>
 
-    <div id="page-wrap">
+    <div id="page-wrap" >
     
-        <h2> Chat</h2>
+        <h2 style="text-align:center;"> Chat</h2>
         
         <p id="name-area"></p>
         
         <div id="chat-wrap"><div id="chat-area"></div></div>
+        
         
         <form id="send-message-area"  style = "display: flex;
                         flex-wrap: wrap;
@@ -107,7 +114,6 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         border: 1px solid rgba(23,23,23, .2);
                         margin: 5px;
                         padding: 5px;
-                        width: 20%;
                         background-color: #FFF;
                         align-items: stretch;
                         display: flex;
@@ -117,10 +123,10 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
-                        background-image: url(https://i.pinimg.com/736x/c1/7f/31/c17f318095085ff32bb7fadbb1f9a89a.jpg);"
+                        background-image: url(https://www.wallpapertip.com/wmimgs/59-594557_league-of-legends-neon.jpg);"
                         >
-            <p>Your message: </p>
-            <textarea id="sendie" maxlength = '100' ></textarea>
+            <p style="color:white;">Your message: </p>
+            <textarea id="sendie" maxlength = '100' placeholder ="type message and enter"></textarea>
         </form>
     
     </div>
