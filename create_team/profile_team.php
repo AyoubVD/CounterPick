@@ -45,7 +45,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
             </div>
             <h1>team:<?php echo  $user_data->teamname;?></h1>
             <h1>info:<?php echo  $user_data->bio;?></h1>
-            <h1>looking:<?php echo  $user_data->looking;?></h1>
+            <h1>looking for:<?php echo  $user_data->looking;?></h1>
             <h1>win:<?php echo  $user_data->win;?></h1>
             <h1>loss:<?php echo  $user_data->loss;?></h1>
         <br>

@@ -95,7 +95,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                 echo '<br>';
                 echo '<a style="color:white;" href="profile.php">Go back to Profile</a>';
                 echo '<br>';
-                echo '<a style="color:white;" href="recruit.php">Go back to Recruit</a>';
+                echo '<a style="color:white;" href="recruit.php">Go back to Find team</a>';
                 ?>
             </div>
         </div>

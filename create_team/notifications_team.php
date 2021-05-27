@@ -65,7 +65,7 @@ $get_all_req_sender = $frnd_obj->request_notification($_SESSION['user_id'], true
             </div>
             <h1>team:<?php echo  $user_data->teamname;?></h1>
             <h1>info:<?php echo  $user_data->bio;?></h1>
-            <h1>looking:<?php echo  $user_data->looking;?></h1>
+            <h1>looking for:<?php echo  $user_data->looking;?></h1>
             <h1>win:<?php echo  $user_data->win;?></h1>
             <h1>loss:<?php echo  $user_data->loss;?></h1>
         <br>
@@ -103,8 +103,8 @@ $get_all_req_sender = $frnd_obj->request_notification($_SESSION['user_id'], true
                         margin-right: auto;
                         background-image: url(https://i.pinimg.com/736x/c1/7f/31/c17f318095085ff32bb7fadbb1f9a89a.jpg);color:white;"
                         ">
-                                <div class="user_img"><img src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
-                                <h1>ign:<div class="user_info"><span>'.$row->username.'</span></h1>
+                                <div  class="user_img"><img  width="30" height="30" src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
+                                <h6>ign:<div class="user_info"><span>'.$row->username.'</span></h6>
                                 <p>role:<div class="user_info"><span>'.$row->role.'</span></p> 
                                 <span><a href="user_profile.php?id='.$row->sender.'" class="see_profileBtn">See profile</a></div>
                             </div>';
