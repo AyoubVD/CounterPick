@@ -11,27 +11,43 @@ if(isset($_SESSION['email'])){
 }
 ?>
 <?php include_once "header.php" ?>
-<section class="signup-form">
+<section class="signup-form" style = "display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        border: 1px solid rgba(23,23,23, .2);
+                        margin: 5px;
+                        padding: 50px;
+                        width: 20%;
+                        background-color: #FFF;
+                        align-items: stretch;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        text-align: center;
+                        align-content: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,h_630,f_auto,q_auto,g_auto/shape/cover/sport/5c2cd98abb4b87834e000001.jpeg);color:white;">
     <h1>Create Team</h1>
     <form action="" method="POST" novalidate>
-      <input type="text" id="username" name="username" spellcheck="false" placeholder="Enter your Team Name" required>
+      <input style="color:black;" type="text" id="username" name="username" spellcheck="false" placeholder="Enter your Team Name" required>
       <br>
       <br>
-      <input type="email" id="email" name="email" spellcheck="false" placeholder="Enter your email address" required>
+      <input style="color:black;" type="email" id="email" name="email" spellcheck="false" placeholder="Enter your email address" required>
       <br>
       <br>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input style="color:black;" type="password" id="password" name="password" placeholder="Enter your password" required>
       <br>
       <br>
       <h2>Team goal</h2>
-      <textarea rows="5" name="bio" cols="30" placeholder ="Tell us about your team"></textarea>
+      <textarea style="color:black;" rows="5" name="bio" cols="30" placeholder ="Tell us about your team"></textarea>
       <br>
       <br>
       <h2>What players do you want</h2>
-      <textarea rows="5" name="looking" cols="30" placeholder ="Tell us about your team"></textarea>
+      <textarea style="color:black;" rows="5" name="looking" cols="30" placeholder ="Tell us about your team"></textarea>
       <br>
       <br>
-      <input type="submit" value="Sign Up">
+      <input style="color:black;" type="submit" value="Sign Up">
     </form>
     <div>  
       <?php
@@ -43,8 +59,14 @@ if(isset($_SESSION['email'])){
         }       
       ?>    
     </div>
-            <a href="login_team.php">Already an account <b>click here</b></a>
-</section>       
-<?php include_once "footer.php" ?>
+            <a style="color:white;"  href="login_team.php">Already an account <b>click here</b></a>
+            <br>
+            <br>
+            <br>
+            <?php include_once "footer.php" ?>
+</section> 
+<br>
+<br>      
+
 </body>
 </html>

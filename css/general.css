@@ -58,6 +58,12 @@ body {
     background-repeat: no-repeat;
   }
   
+html,body {
+
+    overflow:auto;
+    
+    }
+  
   
   
 

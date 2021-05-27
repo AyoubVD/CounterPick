@@ -94,13 +94,11 @@ if(isset($_SESSION['email'])){
       ?>    
     </div>
             <a style="color:white;"href="login.php">Already an account <b>click here</b></a>
+            <br>
+            <br>
+            <?php include_once "./components/footer.php" ?>
 </section>       
-<footer style="color:white;">
-    <a style="color:white;" href="https://counterpick123.wordpress.com/">About us</a>
-    <a style="color:white;" href="#">Teaser</a>
-    <br>
-    © 2021 - Counterpick - Thomas More
-</footer>
+
 </body>
 </html>
 

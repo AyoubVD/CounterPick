@@ -19,7 +19,28 @@ $get_req_num = $frnd_obj->request_notification($_SESSION['user_id'], false);
 $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 ?>
 <?php include_once "header.php" ?>
-<h1 style='background-image: url("https://nochii.com/nl/wp-content/uploads/2017/10/esports.jpg");color:white; padding: 6%;'>Welkom bij Counterpick!</h1>
+<h1 style = "display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        border: 1px solid rgba(23,23,23, .2);
+                        margin: 5px;
+                        padding: 5px;
+                        width: 20%;
+                        background-color: #FFF;
+                        align-items: stretch;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        text-align: center;
+                        align-content: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-image: url('https://candid.technology/wp-content/uploads/2019/10/League-of-Legends-Wallpaper-19.jpg');
+                        color:white;" >Welkom bij Counterpick!</h1>
+<br>
+<br>
+<br>
+
         <div id="content" style = "display: flex;
                         flex-wrap: wrap;
                         align-items: center;
