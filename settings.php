@@ -35,12 +35,13 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
+                        padding:51px;
                         background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,h_630,f_auto,q_auto,g_auto/shape/cover/sport/5c2cd98abb4b87834e000001.jpeg);color:white;">
            <h1>Change bio or role or status</h1>
            <h2>bio:</h2>
     <textarea style="color:black;" rows="5" type="text" name="bio"  cols="30"></textarea><br>
     <input  style="color:black;"  type="submit" name="bio_update" value="edit">
-    <h2>looking for:</h2>
+    <br><h2>looking for:</h2>
     <textarea style="color:black;" rows="5" type="text" name="looking"  cols="30"></textarea><br>
     <input  style="color:black;"  type="submit" name="looking_update" value="edit">
 
