@@ -42,15 +42,32 @@ $get_all_req_sender = $frnd_obj->request_notification($_SESSION['user_id'], true
 
     <div class="profile_container">
         
-        <div class="inner_profile">
+    <div class="inner_profile"style = "display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        border: 1px solid rgba(23,23,23, .2);
+                        margin: 5px;
+                        padding: 50px;
+                        width: 20%;
+                        background-color: #FFF;
+                        align-items: stretch;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        text-align: center;
+                        align-content: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-image: url(https://i.pinimg.com/736x/c1/7f/31/c17f318095085ff32bb7fadbb1f9a89a.jpg);color:white;">
             <div class="img">
                 <img src="profile_images/<?php echo $user_data->user_image; ?>" alt="Profile image">
             </div>
             <h1>ign:<?php echo  $user_data->username;?></h1>
-            <h1>info:<?php echo  $user_data->bio;?></h1>
-            <h1>looking for:<?php echo  $user_data->looking;?></h1>
-            <h1>role:<?php echo  $user_data->role;?></h1>
         </div>
+        <h1>role:<?php echo  $user_data->role;?></h1>
+        <h1>info:<?php echo  $user_data->bio;?></h1>
+        <h1>looking for:<?php echo  $user_data->looking;?></h1>
+        <br>
         <nav>
             <ul>
                 <li><a href="notifications.php" rel="noopener noreferrer" class="active">Requests<span class="badge <?php
@@ -82,6 +99,7 @@ $get_all_req_sender = $frnd_obj->request_notification($_SESSION['user_id'], true
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
+                        background-image: url(https://i.pinimg.com/736x/c1/7f/31/c17f318095085ff32bb7fadbb1f9a89a.jpg);color:white;"
                         ">
                                 <div class="user_img"><img width="30" height="30"  src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
                                 <h6>team:<div class="user_info"><span>'.$row->teamname.'</span></h6>

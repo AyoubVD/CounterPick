@@ -37,10 +37,10 @@ $scheduleBuilder->shuffle(18);
 $schedule = $scheduleBuilder->build();
 
 ?>
+<h1>Tournement</h1>
+<h2>Sample Full Schedule</h2>
+<h2> <?php echo date("Y/m/d")?> tournement ends in 3 months <?php echo date("Y/08/d")?></h2>
 <div class="contain"></div>
-        <h1>Tournement</h1>
-        <h2>Sample Full Schedule</h2>
-        <h2> <?php echo date("Y/m/d")?> tournement ends in 3 months <?php echo date("Y/08/d")?></h2>
         <?php foreach($schedule as $round => $matchups){ ?>
         <h3>Round <?=$round?></h3>
         <ul>

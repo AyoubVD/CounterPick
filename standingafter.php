@@ -43,6 +43,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
+                        background-image: url(https://i.pinimg.com/736x/c1/7f/31/c17f318095085ff32bb7fadbb1f9a89a.jpg);color:white;"
                         "
                         >        <h3 style="padding: 35px;"><div class="user_info"><span>'.$row->plaats.'</span></h3>
                                 <div style="padding: 35px;" class="user_img"><img width="48" height="48" style="border-radius: 50%;" src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
@@ -61,4 +62,3 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
 <?php include_once "./components/footer.php" ?>
 </body>
 </html>
-    
