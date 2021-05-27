@@ -19,7 +19,19 @@
 <body>   
     <div class="container-fluid" style="background-image: url('https://i.ytimg.com/vi/QzxSg4EfV60/maxresdefault.jpg');height:200px;"></div>      
     <header>
-        <nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="197">
+        <nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="197" style="position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 58px;position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 58px;">
             <ul class="nav navbar-nav" style="padding-left: 10%;float:right;"> 
                 <?php 
                     include_once 'includes/init.php';
