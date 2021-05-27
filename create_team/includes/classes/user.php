@@ -42,9 +42,6 @@ class User{
                     if (strlen($this->user_name) > 16) {
                         return ['errorMessage' => 'Username cannot be over 16 characters!'];
                     }
-                    if (strlen($looking) > 16) {
-                        return ['errorMessage' => 'Looking for cannot be over 16 characters!'];
-                    }
                     else{
                         
                         $user_image = rand(20,40);
