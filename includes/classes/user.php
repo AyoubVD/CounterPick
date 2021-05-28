@@ -9,7 +9,7 @@ class User{
     function __construct($db_connection){
         $this->db = $db_connection;
     }
-    $python = `python CheckPlayerExistance.py`;
+    $python = ("python CheckPlayerExistance.py .$region .$username");
     // SING UP USER  summenername = $username  region =$region
     function singUpUser($username, $email, $password,$formGender,$rolerank,$bio,$looking,$region){
         try{
