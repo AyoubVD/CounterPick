@@ -41,8 +41,14 @@ class User{
                     if (strlen($this->user_name) > 16) {
                         return ['errorMessage' => 'Username cannot be over 16 characters!'];
                     }
-                    elseif(!preg_match("#[a-z]+#",$password)) {
-                        return ['errorMessage' => "Your Password Must Contain At Least 1 Lowercase Letter!"];
+                    if(strlen($this->user_pass) < 8) {
+                        return ['errorMessage' => "Your Password Must Contain At Least 8 Characters!"];
+                    }
+                    if (!preg_match("#[0-9]+#",$this->user_name)) {
+                        return ['errorMessage' => 'Your Password Must Contain At Least 1 Number!'];
+                    }
+                    if (!preg_match("#[A-Z]+#",$this->user_name)) {
+                        return ['errorMessage' => 'Your Password Must Contain At Least 1 Capital Letter!'];
                     }
                     //zet hier python summoner check "return ['errorMessage' => 'Bad name make sure not to have symbols!'];"
                     if(!$python){
