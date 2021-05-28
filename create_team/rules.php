@@ -49,7 +49,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
         </div>
         <footer style="color:white;">
     <a style="color:white;" href="https://counterpick123.wordpress.com/">About us</a>
-    <a style="color:white;" href="#">Teaser</a>
+    <a style="color:white;" href="https://www.youtube.com/watch?v=aqdPN6tpFfo">Teaser</a>
     <br>
     © 2021 - Counterpick - Thomas More
 </footer>
