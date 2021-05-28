@@ -39,6 +39,15 @@ class User{
                     if (!preg_match("/^[a-zA-Z0-9]*$/",$this->user_name)) {
                         return ['errorMessage' => "Don't use symbols!"];
                     }
+                    if(strlen($this->user_pass) < 8) {
+                        return ['errorMessage' => "Your Password Must Contain At Least 8 Characters!"];
+                    }
+                    if (!preg_match("#[0-9]+#",$this->user_pass)) {
+                        return ['errorMessage' => 'Your Password Must Contain At Least 1 Number!'];
+                    }
+                    if (!preg_match("#[A-Z]+#",$this->user_pass)) {
+                        return ['errorMessage' => 'Your Password Must Contain At Least 1 Capital Letter!'];
+                    }
                     else{
                         
                         $user_image = rand(20,40);

@@ -13,9 +13,6 @@ class User{
     // SING UP USER  summenername = $username  region =$region
     function singUpUser($username, $email, $password,$formGender,$rolerank,$bio,$looking,$region){
         try{
-           
-
-            $python = ("python CheckPlayerExistance.py .$region .$username");
             $this->user_name = trim($username);
             $this->user_email = trim($email);
             $this->user_pass = trim($password);
@@ -44,15 +41,11 @@ class User{
                     if(strlen($this->user_pass) < 8) {
                         return ['errorMessage' => "Your Password Must Contain At Least 8 Characters!"];
                     }
-                    if (!preg_match("#[0-9]+#",$this->user_name)) {
+                    if (!preg_match("#[0-9]+#",$this->user_pass)) {
                         return ['errorMessage' => 'Your Password Must Contain At Least 1 Number!'];
                     }
-                    if (!preg_match("#[A-Z]+#",$this->user_name)) {
+                    if (!preg_match("#[A-Z]+#",$this->user_pass)) {
                         return ['errorMessage' => 'Your Password Must Contain At Least 1 Capital Letter!'];
-                    }
-                    //zet hier python summoner check "return ['errorMessage' => 'Bad name make sure not to have symbols!'];"
-                    if(!$python){
-                        return ['errorMessage' => 'Username was not found, check region and or sumonner name'];
                     }
                     else{
                         
