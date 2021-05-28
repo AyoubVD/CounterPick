@@ -14,6 +14,8 @@ class User{
     function singUpUser($username, $email, $password,$formGender,$rolerank,$bio,$looking,$region){
         try{
            
+
+            $python = ("python CheckPlayerExistance.py .$region .$username");
             $this->user_name = trim($username);
             $this->user_email = trim($email);
             $this->user_pass = trim($password);
@@ -31,14 +33,21 @@ class User{
                     if($user_name->rowCount() > 0){
                         return ['errorMessage' => 'This User name is already taken. Please Try another.'];
                     }
+                    $user_name = $this->db->prepare("SELECT * FROM `users` WHERE username = ?");
+                    $user_name->execute([$this->user_name]);
+                    if (!preg_match("/^[a-zA-Z0-9]*$/",$this->user_name)) {
+                        return ['errorMessage' => 'Bad name make sure not to have symbols!'];
+                    }
                     if (strlen($this->user_name) > 16) {
                         return ['errorMessage' => 'Username cannot be over 16 characters!'];
                     }
-                    if (!preg_match("/^(?=.[A-Za-z])(?=.\d)[A-Za-z\d]{8,}$/",$password)) {
-                        return ['errorMessage' => "Don't use symbols!"];
+                    elseif(!preg_match("#[a-z]+#",$password)) {
+                        return ['errorMessage' => "Your Password Must Contain At Least 1 Lowercase Letter!"];
                     }
                     //zet hier python summoner check "return ['errorMessage' => 'Bad name make sure not to have symbols!'];"
-                 
+                    if(!$python){
+                        return ['errorMessage' => 'Username was not found, check region and or sumonner name'];
+                    }
                     else{
                         
                         $user_image = $formGender;
@@ -59,7 +68,7 @@ class User{
                         $sign_up_stmt->bindValue(':bio',$bio, PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':looking',$looking, PDO::PARAM_STR);
                         $sign_up_stmt->execute();
-                        return ['successMessage' => 'You are registered'];                 
+                        header("location:./error_succeshandels.php?error=none");                  
                     }
                 }
                 else{
