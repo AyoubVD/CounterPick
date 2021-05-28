@@ -63,7 +63,7 @@ class User{
                         $sign_up_stmt->bindValue(':bio',$bio, PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':looking',$looking, PDO::PARAM_STR);
                         $sign_up_stmt->execute();
-                        header("location:./error_succeshandels.php?error=none");                  
+                        return ['errorMessage' => 'Username was not found, check region and or sumonner name'];                 
                     }
                 }
                 else{
