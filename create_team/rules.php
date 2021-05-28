@@ -39,7 +39,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
           <h1>Tournement rules</h1>
         <br>
         <h1>How to play?</h1>
-        <h6> Make a team assamble your teamates(friends) you can find players here aswell (go to recruit) add them and add them in the game there ign is given.Every round you play 1 team and every round you win against a team you get 1 point  and you will only play the same team once.You can start anywhere just make sure you fight the opponent of that round and dont play them twice The Winner of the tournement can choose an icon and a team background.</h6>
+        <h6>Every team gets 6 rounds every tournement(so 6 opponents) Make a team assamble your teamates(friends) you can find players here aswell (go to recruit) add them and add them in the game there ign is given.Every round you play 1 team and every round you win against a team you get 1 point  and you will only play the same team once.You can start anywhere just make sure you fight the opponent of that round and dont play them twice The Winner of the tournement can choose an icon and a team background.</h6>
         <h1>How to find a team to play against?</h1>
         <h6>There is a chat room where you can find a team to play against(find the team you have to play against see if one of your opponent is available).</h6>
         <h1>How to submit win?</h1>
