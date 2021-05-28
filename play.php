@@ -26,7 +26,7 @@
         <h1>Cant wait?</h1>
         <h2>Do not smurf please!</h2>
         <h2>This is for beginners and for players from unranked to silver!</h2>
-        <h1><a style="color:white;" href='login_as.php'>login here!</a></h1>
+        <h1><a style="color:white;" href='login_as.php' padding-left="2%">login here!</a></h1>
         <h1><a style="color:white;" href='signup_as.php'>register here!</a></h1>
         <br>
         <footer style="color:white;">
