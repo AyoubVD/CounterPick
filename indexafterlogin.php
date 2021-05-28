@@ -55,7 +55,7 @@ src="https://www.youtube.com/embed/gYRsfboeAnM">
             <br>
             <p>A web application where you can find data on the current state of the tournament.</p>
             <br>
-            <p>We are using an python script to get the necessary information on the players and using it to match the players on the same skillset.</p>
+            <p>We are using php to build our site and tournament.</p>
             <br>
             <h3>
             So you might ask, isn't this a lot. <br>
