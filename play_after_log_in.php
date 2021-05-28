@@ -123,7 +123,7 @@ echo '<p style="color:white;" >Select page</p>';
 
         <footer style="color:white;">
     <a style="color:white;" href="https://counterpick123.wordpress.com/">About us</a>
-    <a style="color:white;" href="https://www.youtube.com/watch?v=aqdPN6tpFfo">Teaser</a>
+    <a style="color:white;" href="https://www.youtube.com/watch?v=gYRsfboeAnM">Teaser</a>
     <br>
     © 2021 - Counterpick - Thomas More
 </footer>
