@@ -31,6 +31,3 @@ def findUser(region,username):
     return False
     driver.quit()
   
-
-bestaatgebruiker = findUser('euw','jinchuuriki007')
-print(bestaatgebruiker)
