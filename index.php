@@ -62,7 +62,7 @@
             We will list <b>all</b> the requirements below.
             </h3>
             <br>
-            <p>LOL installed, updated web browser and a stable network connection.test</p>      
+            <p>LOL installed, updated web browser and a stable network connection</p>      
             <p>As you can see this isn't a lot, so what's holding you back? <br>
             Come and join the community to become a better League player!</p>
             <footer style="color:white;">
