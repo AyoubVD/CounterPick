@@ -68,7 +68,7 @@ class User{
                         $sign_up_stmt->bindValue(':bio',$bio, PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':looking',$looking, PDO::PARAM_STR);
                         $sign_up_stmt->execute();
-                        header("location:./error_succeshandels.php?error=none");                  
+                        return ['successMessage' => 'You are registered'];                   
                     }
                 }
                 else{
