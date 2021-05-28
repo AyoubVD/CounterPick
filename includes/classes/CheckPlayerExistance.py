@@ -30,6 +30,3 @@ def findUser(region,username):
   except:
     return False
     driver.quit()
-
-x = findUser('euw','jinchuuriki007')
-print(x)
