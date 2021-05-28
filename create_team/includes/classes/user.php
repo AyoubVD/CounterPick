@@ -57,7 +57,7 @@ class User{
                         $sign_up_stmt->bindValue(':bio',$bio, PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':looking',$looking, PDO::PARAM_STR);
                         $sign_up_stmt->execute();
-                        return ['successMessage' => "Don't use symbols!"];                  
+                        return ['successMessage' => 'You are registered'];                  
                     }
                 }
                 else{

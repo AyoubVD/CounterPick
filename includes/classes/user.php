@@ -13,7 +13,7 @@ class User{
     // SING UP USER  summenername = $username  region =$region
     function singUpUser($username, $email, $password,$formGender,$rolerank,$bio,$looking,$region){
         try{
-            $python = shell_exec("python CheckPlayerExistance.py .$region .$username");
+           
             $this->user_name = trim($username);
             $this->user_email = trim($email);
             $this->user_pass = trim($password);
@@ -34,10 +34,11 @@ class User{
                     if (strlen($this->user_name) > 16) {
                         return ['errorMessage' => 'Username cannot be over 16 characters!'];
                     }
-                    //zet hier python summoner check "return ['errorMessage' => 'Bad name make sure not to have symbols!'];"
-                    if(!$python){
-                        return ['errorMessage' => 'Username was not found, check region and or sumonner name'];
+                    if (!preg_match("/^(?=.[A-Za-z])(?=.\d)[A-Za-z\d]{8,}$/",$password)) {
+                        return ['errorMessage' => "Don't use symbols!"];
                     }
+                    //zet hier python summoner check "return ['errorMessage' => 'Bad name make sure not to have symbols!'];"
+                 
                     else{
                         
                         $user_image = $formGender;
@@ -58,7 +59,7 @@ class User{
                         $sign_up_stmt->bindValue(':bio',$bio, PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':looking',$looking, PDO::PARAM_STR);
                         $sign_up_stmt->execute();
-                        return ['errorMessage' => 'Username zzzzwas not found, check region and or sumonner name'];                 
+                        return ['successMessage' => 'You are registered'];                 
                     }
                 }
                 else{
