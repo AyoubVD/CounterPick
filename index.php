@@ -42,9 +42,9 @@
             <h2>What is CounterPick?</h2>
             <h2>Here is our teaser!</h2>
             <br>
-            <iframe width="420" height="315"
-src="https://www.youtube.com/embed/gYRsfboeAnM">
-</iframe>
+            <iframe width="420" height="315" 
+                src="https://www.youtube.com/embed/gYRsfboeAnM">
+            </iframe>
             <br>
             <h3>CounterPick is <u>four</u> points</h3>
             <br>
