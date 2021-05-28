@@ -15,7 +15,7 @@
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
-                        background-image: url('https://candid.technology/wp-content/uploads/2019/10/League-of-Legends-Wallpaper-19.jpg');
+                        background-image: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/clash-2018/en_GB/a46e742ae82f9d4f9db8e34ba57873e513e727b7/assets/static/img/backgrounds/brackets-bg.jpg');
                         color:white;" >Welkom bij Counterpick!</h1>
 <br>
 <br>
@@ -36,7 +36,7 @@
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
-                        background-image: url('https://candid.technology/wp-content/uploads/2019/10/League-of-Legends-Wallpaper-19.jpg');
+                        background-image: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/clash-2018/en_GB/a46e742ae82f9d4f9db8e34ba57873e513e727b7/assets/static/img/backgrounds/brackets-bg.jpg');
                         color:white;">
             
             <h2>What is CounterPick?</h2>
