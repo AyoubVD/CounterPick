@@ -41,7 +41,7 @@ class User{
                     }
                     //zet hier python summoner check "return ['errorMessage' => 'Bad name make sure not to have symbols!'];"
                     if(!$python){
-                        return ['errorMessage' => 'Username was not found, check region and or sumonner name']
+                        return ['errorMessage' => 'Username was not found, check region and or sumonner name'];
                     }
                     else{
                         
