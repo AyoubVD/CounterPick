@@ -23,7 +23,7 @@
             All you would need is the LoL application, our web application and a stable network connection.<br>
             Register or log in now to start playing!<br>
         </p> 
-        <h1>Cant wait?</h1>
+        <h1>Can't wait?</h1>
         <h2>Do not smurf please!</h2>
         <h2>This is for beginners and for players from unranked to silver!</h2>
         <h1><a style="color:red;" href='login_as.php' padding-left="2%">Login here!</a></h1>
