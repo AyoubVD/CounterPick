@@ -20,7 +20,6 @@
 <br>
 <br>
 <br>
-
         <div id="content" style = "display: flex;
                         flex-wrap: wrap;
                         align-items: center;
