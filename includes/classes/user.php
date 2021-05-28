@@ -9,7 +9,7 @@ class User{
     function __construct($db_connection){
         $this->db = $db_connection;
     }
- 
+    $python = `python CheckPlayerExistance.py`;
     // SING UP USER  summenername = $username  region =$region
     function singUpUser($username, $email, $password,$formGender,$rolerank,$bio,$looking,$region){
         try{
@@ -39,6 +39,9 @@ class User{
                         return ['errorMessage' => 'Username cannot be over 16 characters!'];
                     }
                     //zet hier python summoner check "return ['errorMessage' => 'Bad name make sure not to have symbols!'];"
+                    if(!$python){
+                        return ['errorMessage' => 'Username was not found, check region and or sumonner name']
+                    }
                     else{
                         
                         $user_image = $formGender;
