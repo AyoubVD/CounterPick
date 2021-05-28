@@ -15,6 +15,7 @@
                         align-content: center;
                         margin-left: auto;
                         margin-right: auto;
+                        font-size:1.2vw;
                         background-image: url(https://lolstatic-a.akamaihd.net/frontpage/apps/prod/clash-2018/en_GB/a46e742ae82f9d4f9db8e34ba57873e513e727b7/assets/static/img/backgrounds/brackets-bg.jpg);color:white;">
         <h1>Intro</h1>
         <p>
