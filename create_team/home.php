@@ -63,7 +63,9 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
             <h2>What is CounterPick?</h2>
             <h2>Here is our teaser!</h2>
             <br>
-            <h2><a style="color:white;" href="https://www.youtube.com/watch?v=gYRsfboeAnM">click here</a></h2>
+            <iframe width="420" height="315"
+src="https://www.youtube.com/embed/gYRsfboeAnM">
+</iframe>
             <br>
             <h3>CounterPick is <u>four</u> points</h3>
             <br>
