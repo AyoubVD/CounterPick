@@ -41,6 +41,9 @@
                         color:white;">
             
             <h2>What is CounterPick?</h2>
+            <h2>Here is our teaser!</h2>
+            <br>
+            <h2><a style="color:white;" href="https://www.youtube.com/watch?v=gYRsfboeAnM">click here</a></h2>
             <br>
             <h3>CounterPick is <u>four</u> points</h3>
             <br>

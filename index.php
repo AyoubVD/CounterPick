@@ -40,6 +40,9 @@
                         color:white;">
             
             <h2>What is CounterPick?</h2>
+            <h2>Here is our teaser!</h2>
+            <br>
+            <h2><a style="color:white;" href="https://www.youtube.com/watch?v=gYRsfboeAnM">click here</a></h2>
             <br>
             <h2>Do not smurf please!</h2>
             <h2>This is for beginners and for players from unranked to silver!</h2>
