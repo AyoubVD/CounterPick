@@ -37,10 +37,7 @@ class User{
                     $user_name = $this->db->prepare("SELECT * FROM `users` WHERE teamname = ?");
                     $user_name->execute([$this->user_name]);
                     if (!preg_match("/^[a-zA-Z0-9]*$/",$this->user_name)) {
-                        return ['errorMessage' => 'This Email Address is already registered. Please Try another.'];
-                    }
-                    if (strlen($this->user_name) > 16) {
-                        return ['errorMessage' => 'Username cannot be over 16 characters!'];
+                        return ['errorMessage' => "Don't use symbols!"];
                     }
                     else{
                         
@@ -60,7 +57,7 @@ class User{
                         $sign_up_stmt->bindValue(':bio',$bio, PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':looking',$looking, PDO::PARAM_STR);
                         $sign_up_stmt->execute();
-                        header("location:../error_succeshandels.php?error=none");                  
+                        header("location:../../error_succeshandels.php?error=none");                  
                     }
                 }
                 else{
