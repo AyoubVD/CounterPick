@@ -26,8 +26,8 @@
         <h1>Can't wait?</h1>
         <h2>Do not smurf please!</h2>
         <h2>This is for beginners and for players from unranked to silver!</h2>
-        <h1><a style="color:red;" href='login_as.php' padding-left="2%">Login here!</a></h1>
-        <h1><a style="color:red;" href='signup_as.php'>Register here!</a></h1>
+        <h1><a style="color: #EB1E36;" href='login_as.php' padding-left="2%">Login here!</a></h1>
+        <h1><a style="color: #EB1E36;" href='signup_as.php'>Register here!</a></h1>
         <br>
         <footer style="color:white;">
     <a style="color:white;" href="https://counterpick123.wordpress.com/">About us</a>
