@@ -31,11 +31,6 @@ class User{
                     if($user_name->rowCount() > 0){
                         return ['errorMessage' => 'This User name is already taken. Please Try another.'];
                     }
-                    $user_name = $this->db->prepare("SELECT * FROM `users` WHERE username = ?");
-                    $user_name->execute([$this->user_name]);
-                    if (!preg_match("/^[a-zA-Z0-9]*$/",$this->user_name)) {
-                        return ['errorMessage' => 'Bad name make sure not to have symbols!'];
-                    }
                     if (strlen($this->user_name) > 16) {
                         return ['errorMessage' => 'Username cannot be over 16 characters!'];
                     }
@@ -63,7 +58,7 @@ class User{
                         $sign_up_stmt->bindValue(':bio',$bio, PDO::PARAM_STR);
                         $sign_up_stmt->bindValue(':looking',$looking, PDO::PARAM_STR);
                         $sign_up_stmt->execute();
-                        return ['errorMessage' => 'Username was not found, check region and or sumonner name'];                 
+                        return ['errorMessage' => 'Username zzzzwas not found, check region and or sumonner name'];                 
                     }
                 }
                 else{
