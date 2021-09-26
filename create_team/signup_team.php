@@ -28,6 +28,16 @@ if(isset($_SESSION['email'])){
                         margin-left: auto;
                         margin-right: auto;
                         background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,h_630,f_auto,q_auto,g_auto/shape/cover/sport/5c2cd98abb4b87834e000001.jpeg);color:white;">
+    <div>  
+      <?php
+        if(isset($result['errorMessage'])){
+          echo '<p style="color:red; class="errorMsg">'.$result['errorMessage'].'</p>';
+        }
+        if(isset($result['successMessage'])){
+          echo '<p  style="color:green;" class="successMsg">'.$result['successMessage'].'</p>';
+        }       
+      ?>    
+    </div>
     <h1>Create Team</h1>
     <form action="" method="POST" novalidate>
       <input style="color:black;" type="text" id="username" name="username" spellcheck="false" placeholder="Enter your Team Name" required>
@@ -49,16 +59,6 @@ if(isset($_SESSION['email'])){
       <br>
       <input style="color:black;" type="submit" value="Sign Up">
     </form>
-    <div>  
-      <?php
-        if(isset($result['errorMessage'])){
-          echo '<p style="color:red; class="errorMsg">'.$result['errorMessage'].'</p>';
-        }
-        if(isset($result['successMessage'])){
-          echo '<p  style="color:green;" class="successMsg">'.$result['successMessage'].'</p>';
-        }       
-      ?>    
-    </div>
             <a style="color:white;"  href="login_team.php">Already an account <b>click here</b></a>
             <br>
             <br>
