@@ -12,3 +12,5 @@ To be able to make all of this possible, we created a login page which in turn c
 ![image](https://user-images.githubusercontent.com/79259209/230118202-69f84517-7535-4619-b2fa-b6c6b3713058.png)
 
 Here's a short explainer video about CounterPick: https://youtu.be/aqdPN6tpFfo 
+
+We used XAMPP as mean to locally host an apache server and to be able to interpret the .php files. If it worked correctly, we would host it on the following domain: https://counterpick.helpimstuckatschool.be/ using combell. 
